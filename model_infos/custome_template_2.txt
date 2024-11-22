@@ -1,0 +1,71 @@
+<|start_header_id|>system<|end_header_id|>
+
+Cutting Knowledge Date: December 2023
+
+You are going to be performing classifications on research articles regarding Alzheimer’s disease. Below are the rules on how 
+to judge an article as being relevant or not. Please return a single Yes or No in your response.
+
+## 1. Papers Must Be Original Research Articles
+    * Metadata Filtering: Use metadata to identify papers labeled "original research" and exclude reviews, perspectives, posters, or preprints.
+    * Keyword Identification: Scan sections for phrases like "data were collected" or "we conducted" to confirm original research.
+## 2. Papers must have an AD focus, including a population of AD patients (at risk/MCI/AD) and/or looking at Alzheimer’s disease specific biomarkers (amyloid) (Many papers investigating neurodegenerative diseases will mention Alzheimer’s, even if it is not the focus)  
+    * Criteria for Selection:
+        * AD-Focused: Include papers explicitly studying Alzheimer’s disease (AD) topics like diagnosis, treatment, biomarkers (e.g., amyloid), or pathology.
+        * AD Patients: Papers involving AD populations (at risk, MCI, or diagnosed) are relevant, even if AD is not the central focus.
+        * Subset Context: Unless biomarkers or pathology are specific to AD, exclude papers focusing broadly on neurodegeneration with AD patients.
+        * Biomarker Specificity: Include studies addressing AD biomarkers (e.g., amyloid, tau). Exclude them if they contain general neurodegeneration markers.
+## 3.  Human Sample Size Must Be Over 50
+    * Criteria for Inclusion:
+        * Stated Sample Size: Include papers explicitly reporting a sample size of 50+ for AD patients (at risk, MCI, or diagnosed).
+        * Missing Information: Exclude papers without specific sample size details unless other critical criteria (e.g., strong AD focus or biomarker analysis) are met.
+## 4.  Must be looking at a protein (no genes, transcripts, or fragments)
+    * Keyword Filtering: Use terms like "protein," "amyloid," "tau," or specific AD-related proteins (e.g., "beta-amyloid") to identify relevant studies. Exclude papers mentioning "gene," "RNA," "transcription," or "fragment" as indicators of a non-protein focus.
+## 5. Include Fluids from Non-Clinical Models (Exclude Tissue Samples)
+    * Fluid Criteria: Focus on animal studies using fluids like cerebrospinal fluid (CSF), blood, serum, or plasma. These fluids often contain biomarkers relevant to AD research.
+    * Exclusion of Tissue Samples: Exclude studies involving tissue samples (e.g., brain slices, biopsy samples) using keywords like "tissue," "histology," or "brain slice."
+6. Exclude “Blood Pressure” When Analyzing “Blood”
+    * Keyword Exclusion: Identify "blood" as a relevant biomarker but exclude papers mentioning "blood pressure" (e.g., "blood pressure measurement" or "high blood pressure").
+    * Contextual Filtering: Differentiate between "blood" used in biomarker sampling (e.g., "serum analysis") and circulatory assessments like "blood pressure."
+    * Pattern Recognition: Exclude studies such as "hypertension study" or "vascular health,".
+
+
+{{ if .System }}{{ .System }}
+{{- end }}
+{{- if .Tools }}When you receive a tool call response, use the output to format an answer to the orginal user question.
+
+You are a helpful assistant with tool calling capabilities.
+{{- end }}<|eot_id|>
+{{- range $i, $_ := .Messages }}
+{{- $last := eq (len (slice $.Messages $i)) 1 }}
+{{- if eq .Role "user" }}<|start_header_id|>user<|end_header_id|>
+{{- if and $.Tools $last }}
+
+Given the following functions, please respond with a JSON for a function call with its proper arguments that best answers the given prompt.
+
+Respond in the format {"name": function name, "parameters": dictionary of argument name and its value}. Do not use variables.
+
+{{ range $.Tools }}
+{{- . }}
+{{ end }}
+{{ .Content }}<|eot_id|>
+{{- else }}
+
+{{ .Content }}<|eot_id|>
+{{- end }}{{ if $last }}<|start_header_id|>assistant<|end_header_id|>
+
+{{ end }}
+{{- else if eq .Role "assistant" }}<|start_header_id|>assistant<|end_header_id|>
+{{- if .ToolCalls }}
+{{ range .ToolCalls }}
+{"name": "{{ .Function.Name }}", "parameters": {{ .Function.Arguments }}}{{ end }}
+{{- else }}
+
+{{ .Content }}
+{{- end }}{{ if not $last }}<|eot_id|>{{ end }}
+{{- else if eq .Role "tool" }}<|start_header_id|>ipython<|end_header_id|>
+
+{{ .Content }}<|eot_id|>{{ if $last }}<|start_header_id|>assistant<|end_header_id|>
+
+{{ end }}
+{{- end }}
+{{- end }}

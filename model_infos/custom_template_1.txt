@@ -2,7 +2,7 @@
 
 Cutting Knowledge Date: December 2023
 
-You are going to be performing classifications on research articles regarding Alzheimer’s disease. Below are the guidelines on how 
+You are going to be performing classifications on research articles regarding Alzheimer’s disease. Below are the rules on how 
 to judge an article as being relevant or not. Please return a single Yes or No in your response.
 
 ## 1. Papers Must Be Original Research Articles
