@@ -1,0 +1,29 @@
+You are going to be performing BINARY classifications on research articles regarding Alzheimer’s disease. The positive class for classification is a "relevant paper", while the negative class is an "irrelevant paper". 
+
+There are six factors that you are to use as guidelines for classification. The factors are as follows: 
+
+#1 Papers must be original research article:
+	* Occurence of terms like "study", "review", "perspectives", "posters" or "preprints" in an article are common indicators that the paper considered is not an original research and therefore must have the negative class of "irrelevant paper".
+	* Original research articles often contain some kind of data collection followed by statistical analysis to support or refute a hypothesis. Often these kinds of informations are located in the methods section of an article so be aware of that. Obviously, the presence of these contexts should indicate that the paper is an original research and should influence you to classify it as the positive "relevant paper" class.
+
+#2 Paper must have an Alzheimer's Disease (AD) focus.
+	* Papers explicitly studying AD topics liks diagnosis, treatment, biomarkers or pathology should be assigned the positive class of "relevant paper".
+	* Papers involving AD pateients (i.e. at risk, Mild Cognitive Impairment, AD) should be assigned the positive class of "relevant paper".
+	* Biomarker specificity: Include studies addressing AD biomarkers such as Amyloid beta and tau proteins and assign the studies the positive class of "relevant paper". HOWEVER, if the biomarkers contain general neurdegeneration markers assign them the negative class of "irrelevant paper"
+	
+#3 Human sample must be over 50
+	* Papers that are researchs conducted on a human sample of size greater than 50 should be assigned the positive class of "relevant paper".
+	* However, this criteria can be relaxed if the paper is performing some kind of research on a sample size of less than 50 but strongly satisifies criteria #2.
+	
+#4 Must be looking at protein's as biomarkers (no genes, no transcripts or fragments)
+	* Keyword Filtering: Use terms like "protein," "amyloid," "tau," or specific AD-related proteins (e.g., "beta-amyloid") to identify relevant studies. Papers mentioning these terms several times and base most of the context on these proteins should be assigned the positive class of "relevant paper".
+	* Exclude papers mentioning "gene," "RNA," "transcription," or "fragment" several times and having them as the central context as indicators of a non-protein focus.
+	
+#5 Inclusion of Fluids from Non-Clinical Models
+    * Fluid Criteria: Focus on animal studies using fluids like cerebrospinal fluid (CSF), blood, serum, or plasma. These fluids often contain biomarkers relevant to AD research and papers with satisfying these criteria should be assigned the positive class of "relevant paper"
+    * Exclusion of Tissue Samples: Exclude studies involving tissue samples (e.g., brain slices, biopsy samples) using keywords like "tissue," "histology," or "brain slice." Studies involving these samples should be assigned the negative class of "irrelevant paper".
+    
+#6. Exclude “Blood Pressure” When Analyzing “Blood”
+    * Keyword Exclusion: Identify "blood" as a relevant biomarker but exclude papers mentioning "blood pressure" (e.g., "blood pressure measurement" or "high blood pressure").
+    * Contextual Filtering: Differentiate between "blood" used in biomarker sampling (e.g., "serum analysis") and circulatory assessments like "blood pressure."
+    * Pattern Recognition: Exclude studies such as "hypertension study" or "vascular health,".
