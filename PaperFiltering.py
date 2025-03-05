@@ -38,14 +38,14 @@ def fetch_full_text(article_id):
 
 article_info = defaultdict(str)
 
-with open("valid.txt", 'r') as f1:
-    with open('valid_articles.txt', 'r') as f2:
+with open("/home/tadesa1/ADBMO-UNLV/valid.txt", 'r') as f1:
+    with open('/home/tadesa1/ADBMO-UNLV/valid_articles.txt', 'r') as f2:
         for id, line in zip(f1, f2):
             article_info[id.strip()] = {'class': 1, "title": line.strip()}
         f2.close()
     f1.close()
-with open("invalid.txt", 'r') as f1:
-    with open('invalid_articles.txt', 'r') as f2:
+with open("/home/tadesa1/ADBMO-UNLV/invalid.txt", 'r') as f1:
+    with open('/home/tadesa1/ADBMO-UNLV/invalid_articles.txt', 'r') as f2:
         for id, line in zip(f1, f2):
             article_info[id.strip()] = {'class': 0, "title": line.strip()}
         f2.close()
@@ -54,10 +54,10 @@ with open("invalid.txt", 'r') as f1:
 valid_ids = []
 invalid_ids = []
 
-with open('valid.txt', 'r') as f:
+with open('/home/tadesa1/ADBMO-UNLV/valid.txt', 'r') as f:
     valid_ids = [line.strip() for line in f]
 
-with open('invalid.txt', 'r') as f:
+with open('/home/tadesa1/ADBMO-UNLV/invalid.txt', 'r') as f:
     invalid_ids = [line.strip() for line in f]
 
 for id in valid_ids:
@@ -106,7 +106,7 @@ to judge an article as being relevant or not. Please return a single Yes or No i
 
 def filter_request(sys_prompt, user_prompt, model_num = 4):
     generate_path = "http://oceanus.cs.unlv.edu:11434/api/generate"
-    models = ["custom-llama3.2:latest","llama3.2:1b", "llama3.2:3b","phi3.5:3.8b", "llama3.1:70b", "medllama2:7b", "mistral:7b"]
+    models = ["custom-llama3.2:latest","llama3.2:1b", "llama3.2:3b","phi3.5:3.8b", "LLAMA3.1:70b-ADBMO-filterer2-generate ","LLAMA3.1:70B-ADBMO-filterer-chat","llama3.1:70b", "medllama2:7b", "mistral:7b"]
 
     params = {
         "model": models[model_num],
@@ -121,8 +121,9 @@ def filter_request(sys_prompt, user_prompt, model_num = 4):
 
 def openai_req(sys_prompt, user_prompt):
     from openai import OpenAI 
+    from dotenv import load_dotenv
     import os
-
+    load_dotenv('/home/tadesa1/ADBMO-UNLV/SentrySys_Experiments/.env')
     client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
     response = client.chat.completions.create(
         model = "gpt-4o-mini",
@@ -145,7 +146,24 @@ def openai_req(sys_prompt, user_prompt):
 
 
 def main():
-    
+    with open('/home/tadesa1/ADBMO-UNLV/SentrySys_Experiments/full_text_samples.json', 'r', encoding='utf-8') as f:
+        try:
+            line = f.read()
+            articles = json.loads(line)
+            for art in articles:
+                try:
+                    # print(articles[art])
+                    if articles[art]['Title'] == "ARTICLE NOT FOUND":
+                        continue
+                    article_info[art] = {'title': articles[art]['Title'], 'summary':{'Abstract': articles[art]['Abstract'], 'Method': articles[art]['Method']}}
+                except KeyError:
+                    if articles[art]['Title'] == "ARTICLE NOT FOUND":
+                        continue
+        except json.decoder.JSONDecodeError as e:
+            print(e)
+        
+
+
     for id in article_info:
         if id == '---':
             continue
@@ -166,12 +184,14 @@ def main():
     
         """
     
-        res = filter_request(sys_prompt=custom_template, user_prompt=user_question, model_num=3)
+        # res = filter_request(sys_prompt=custom_template, user_prompt=user_question, model_num=5)
         openai_res = openai_req(sys_prompt=custom_template, user_prompt=user_question)
-        article_info[id]["ollama_model_response"] = res[0]['response']
+        # article_info[id]["ollama_model_response"] = res[0]['response']
+        # print(res[0]['response'])
+        # print(openai_res)
         article_info[id]["openai_response"] = openai_res.message.content
 
-    with open(f'./classification_results/classification_results_{res[1]}.json', 'w') as f:
+    with open(f'classification_results_openai.json', 'w') as f:
         json.dump(article_info, f)
 
 
