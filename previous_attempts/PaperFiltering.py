@@ -25,6 +25,7 @@ def fetch_full_text(article_id):
                 if text['infons']['section_type'] == 'METHODS':
                     summary['Method'].append(text['text'])
         except json.JSONDecodeError as e:
+            print(article_id)
             data = json.loads(response.text[e.colno+2:-1])
             for text in data['documents'][0]['passages'][:]:
                 if text['infons']['section_type'] == 'ABSTRACT':
@@ -38,14 +39,14 @@ def fetch_full_text(article_id):
 
 article_info = defaultdict(str)
 
-with open("/home/tadesa1/ADBMO-UNLV/valid.txt", 'r') as f1:
-    with open('/home/tadesa1/ADBMO-UNLV/valid_articles.txt', 'r') as f2:
+with open("previous_attempts/valid.txt", 'r') as f1:
+    with open('previous_attempts/valid_articles.txt', 'r') as f2:
         for id, line in zip(f1, f2):
             article_info[id.strip()] = {'class': 1, "title": line.strip()}
         f2.close()
     f1.close()
-with open("/home/tadesa1/ADBMO-UNLV/invalid.txt", 'r') as f1:
-    with open('/home/tadesa1/ADBMO-UNLV/invalid_articles.txt', 'r') as f2:
+with open("previous_attempts/invalid.txt", 'r') as f1:
+    with open('previous_attempts/invalid_articles.txt', 'r') as f2:
         for id, line in zip(f1, f2):
             article_info[id.strip()] = {'class': 0, "title": line.strip()}
         f2.close()
@@ -54,10 +55,10 @@ with open("/home/tadesa1/ADBMO-UNLV/invalid.txt", 'r') as f1:
 valid_ids = []
 invalid_ids = []
 
-with open('/home/tadesa1/ADBMO-UNLV/valid.txt', 'r') as f:
+with open('previous_attempts/valid.txt', 'r') as f:
     valid_ids = [line.strip() for line in f]
 
-with open('/home/tadesa1/ADBMO-UNLV/invalid.txt', 'r') as f:
+with open('previous_attempts/invalid.txt', 'r') as f:
     invalid_ids = [line.strip() for line in f]
 
 for id in valid_ids:
@@ -104,9 +105,10 @@ to judge an article as being relevant or not. Please return a single Yes or No i
 """
 
 
-def filter_request(sys_prompt, user_prompt, model_num = 4):
+def filter_request(sys_prompt, user_prompt, model_num = -1):
+    print("I'm in here")
     generate_path = "http://oceanus.cs.unlv.edu:11434/api/generate"
-    models = ["custom-llama3.2:latest","llama3.2:1b", "llama3.2:3b","phi3.5:3.8b", "LLAMA3.1:70b-ADBMO-filterer2-generate ","LLAMA3.1:70B-ADBMO-filterer-chat","llama3.1:70b", "medllama2:7b", "mistral:7b"]
+    models = ["custom-llama3.2:latest","llama3.2:1b", "llama3.2:3b","phi3.5:3.8b", "LLAMA3.1:70b-ADBMO-filterer2-generate ","LLAMA3.1:70B-ADBMO-filterer-chat","llama3.1:70b", "medllama2:7b", "mistral:7b", "deepseek-r1:7b", "abdmo-cls-deepsekk-r1:7b"]
 
     params = {
         "model": models[model_num],
@@ -184,16 +186,20 @@ def main():
     
         """
     
-        # res = filter_request(sys_prompt=custom_template, user_prompt=user_question, model_num=5)
+        res = filter_request(sys_prompt=custom_template, user_prompt=user_question, model_num=-1)
         openai_res = openai_req(sys_prompt=custom_template, user_prompt=user_question)
-        # article_info[id]["ollama_model_response"] = res[0]['response']
+
+
+        article_info[id]["ollama_model_response"] = res[0]['response']
         # print(res[0]['response'])
         # print(openai_res)
         article_info[id]["openai_response"] = openai_res.message.content
 
-    with open(f'classification_results_openai.json', 'w') as f:
-        json.dump(article_info, f)
+    # with open(f'classification_results_openai.json', 'w') as f:
+    #     json.dump(article_info, f)
 
+    with open(f'classification_results_deepseek.json', 'w') as f:
+        json.dump(article_info, f)
 
 if __name__ == "__main__":
     main()
