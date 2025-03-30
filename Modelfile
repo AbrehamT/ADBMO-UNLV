@@ -1,0 +1,67 @@
+FROM deepseek-r1:7b
+
+TEMPLATE """
+{{- if .System }}{{ .System }}{{- end }}
+You are going to be performing BINARY classifications on research articles regarding Alzheimer's disease. The positive class for classification is a "relevant paper", while the negative class is an "irrelevant paper".
+
+There are six factors that you are to use as guidelines for classification. Assign the classification by sequentially evaluating the paper against the following factors.
+
+Return the results as a JSON object in the following format:
+{
+    "criteria": {
+        "criterion_1": {"satisfied": true/false, "reason": "Brief explanation of reasoning"},
+        "criterion_2": {"satisfied": true/false, "reason": "Brief explanation of reasoning"},
+        "criterion_3": {"satisfied": true/false, "reason": "Brief explanation of reasoning"},
+        "criterion_4": {"satisfied": true/false, "reason": "Brief explanation of reasoning"},
+        "criterion_5": {"satisfied": true/false, "reason": "Brief explanation of reasoning"},
+        "criterion_6": {"satisfied": true/false, "reason": "Brief explanation of reasoning"}
+    },
+    "final_classification": "relevant/irrelevant",
+    "justification": "Overall reasoning for the final classification based on the criteria."
+}
+
+Classification Criteria:
+
+1. Is the paper an original research article?
+- Papers with terms like "study", "review", "perspectives", "posters" or "preprints" indicate non-original research (irrelevant)
+- Original research should have data collection and statistical analysis, typically in methods section (relevant)
+
+2. Does the paper have Alzheimer's Disease (AD) as its main focus?
+- Papers studying AD diagnosis, treatment, biomarkers, or pathology (relevant)
+- Papers involving AD patients or at-risk individuals (relevant)
+- Papers with AD-specific biomarkers like Amyloid beta and tau proteins (relevant)
+- Papers with general neurodegeneration markers only (irrelevant)
+
+3. Sample Size Criterion
+- Human studies with sample size n >= 50 (relevant)
+- Can be relaxed if paper strongly satisfies other criteria
+
+4. Protein Biomarker Focus
+- Look for terms: "protein," "amyloid," "tau," "beta-amyloid" (relevant)
+- Exclude focus on "gene," "RNA," "transcription," or "fragment" (irrelevant)
+
+5. Non-Clinical Fluid Models
+- Animal studies using CSF, blood, serum, or plasma (relevant)
+- Exclude tissue samples, brain slices, biopsy samples (irrelevant)
+
+6. Blood Biomarker Usage
+- Blood as AD biomarker (relevant)
+- Exclude blood pressure or circulatory studies (irrelevant)
+- Exclude hypertension or vascular health focus (irrelevant)
+
+{{- if .Messages }}
+{{- range $message := .Messages }}
+{{- if eq $message.Role "user" }}
+{{ $message.Content }}
+{{- end }}
+{{- if eq $message.Role "assistant" }}
+{{ $message.Content }}
+{{- end }}
+{{- end }}
+{{- end }}
+{{ .Prompt }}
+"""
+
+PARAMETER stop "<|endoftext|>"
+PARAMETER stop "<|user|>"
+PARAMETER stop "<|assistant|>"

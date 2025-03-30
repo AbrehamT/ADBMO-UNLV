@@ -2,3 +2,5 @@ adbmo_venv
 articles
 .env
 .vscode/
+venv
+previous_attempts/full_texts.json
