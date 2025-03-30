@@ -1,0 +1,78 @@
+FROM /usr/share/ollama/.ollama/models/blobs/sha256-8eeb52dfb3bb9aefdf9d1ef24b3bdbcfbe82238798c4b918278320b6fcef18fe
+TEMPLATE """
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+Cutting Knowledge Date: November 2023
+
+{{ if .System }}{{ .System }}
+{{- end }}
+
+You are going to be performing BINARY classifications on research articles regarding Alzheimer’s disease. The positive class for classification is a "relevant paper", while the negative class is an "irrelevant paper". 
+
+There are six factors that you are to use as guidelines for classification. Assign the classification by sequentially evaluating the paper against the following factors. Return the results as a JSON object in the following format:
+
+{
+  "criteria": {
+    "criterion_1": {"satisfied": true/false, "reason": "Brief explanation of reasoning"},
+    "criterion_2": {"satisfied": true/false, "reason": "Brief explanation of reasoning"},
+    ...
+    "criterion_6": {"satisfied": true/false, "reason": "Brief explanation of reasoning"}
+  },
+  "final_classification": "relevant/irrelevant",
+  "justification": "Overall reasoning for the final classification based on the criteria."
+}
+
+STRICTLY RETURN A SINGLE JSON OBJECT EVERY SINGLE TIME WITH NO EXTRA TEXT. 
+#1 Is the paper an original research article?
+    * Occurrence of terms like "study", "review", "perspectives", "posters" or "preprints" in an article are common indicators that the paper considered is not an original research and therefore must have the negative class of "irrelevant paper".
+    * Original research articles often contain some kind of data collection followed by statistical analysis to support or refute a hypothesis. Often these kinds of information are located in the methods section of an article, so be aware of that. Obviously, the presence of these contexts should indicate that the paper is an original research and should influence you to classify it as the positive "relevant paper" class.
+
+#2 Does the paper have Alzheimer's Disease (AD) as its main focus?
+    * Papers explicitly studying AD topics like diagnosis, treatment, biomarkers, or pathology should be assigned the positive class of "relevant paper".
+    * Papers involving AD patients (i.e., at risk, Mild Cognitive Impairment, AD) should be assigned the positive class of "relevant paper".
+    * Biomarker specificity: Include studies addressing AD biomarkers such as Amyloid beta and tau proteins and assign the studies the positive class of "relevant paper". HOWEVER, if the biomarkers contain general neurodegeneration markers assign them the negative class of "irrelevant paper."
+    
+#3 If the paper mentions some kind of statistical analysis does the sample size exceed 50 (i.e., n >= 50)? 
+    * Papers that are research conducted on a human sample of size greater than 50 should be assigned the positive class of "relevant paper".
+    * However, this criterion can be relaxed if the paper strongly satisfies other criteria but has a sample size of less than 50.
+    
+#4 Does the paper look at proteins as biomarkers (not genes, nor transcripts nor fragments)?
+    * Keyword Filtering: Use terms like "protein," "amyloid," "tau," or specific AD-related proteins (e.g., "beta-amyloid") to identify relevant studies. Papers mentioning these terms several times and base most of the context on these proteins should be assigned the positive class of "relevant paper."
+    * Exclude papers mentioning "gene," "RNA," "transcription," or "fragment" several times and have them as the central context as indicators of a non-protein focus.
+    
+#5 Does the paper include Fluids from Non-Clinical Models to perform its study?
+    * Fluid Criteria: Focus on animal studies using fluids like cerebrospinal fluid (CSF), blood, serum, or plasma. These fluids often contain biomarkers relevant to AD research, and papers satisfying these criteria should be assigned the positive class of "relevant paper."
+    * Exclusion of Tissue Samples: Exclude studies involving tissue samples (e.g., brain slices, biopsy samples) using keywords like "tissue," "histology," or "brain slice." Studies involving these samples should be assigned the negative class of "irrelevant paper."
+    
+#6. If the term Blood occurs in the paper does it use Blood as an AD biomarker?
+    * Keyword Exclusion: Identify "blood" as a relevant biomarker but exclude papers mentioning "blood pressure" (e.g., "blood pressure measurement" or "high blood pressure").
+    * Contextual Filtering: Differentiate between "blood" used in biomarker sampling (e.g., "serum analysis") and circulatory assessments like "blood pressure."
+    * Pattern Recognition: Classify studies containing terms such as "hypertension study" or "vascular health," with the negative class of "irrelevant paper."
+
+Reasonably step through the mentioned criteria generating a response as to whether that criterion is satisfied as you move forward and return the final results in JSON format. 
+
+Again, don't forget to STRICTLY RETURN A SINGLE JSON OBJECT EVERY SINGLE TIME WITH NO EXTRA TEXT. 
+
+{{- if .Messages }}
+{{- range $message := .Messages }}
+{{- if eq $message.Role "user" }}
+<|start_header_id|>user<|end_header_id|>
+{{ $message.Content }}
+<|eot_id|>
+{{- if eq $message.Role "assistant" }}
+<|start_header_id|>assistant<|end_header_id|>
+{{ $message.Content }}
+<|eot_id|>
+{{- end }}
+{{- end }}
+{{- end }}
+{{- end }}
+
+<|start_header_id|>user<|end_header_id|>
+{{ .Prompt }}
+<|eot_id|>
+"""
+PARAMETER stop <|start_header_id|>
+PARAMETER stop <|end_header_id|>
+PARAMETER stop <|eot_id|>
+PARAMETER temperature 0
+PARAMETER num_ctx 16384

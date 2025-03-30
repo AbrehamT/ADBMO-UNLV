@@ -8,7 +8,7 @@ There are six factors that you are to use as guidelines for classification. Assi
 
 #2 Does the paper have Alzheimer's Disease (AD) as its main focus.
 	* Papers explicitly studying AD topics liks diagnosis, treatment, biomarkers or pathology should be assigned the positive class of "relevant paper".
-	* Papers involving AD pateients (i.e. at risk, Mild Cognitive Impairment, AD) should be assigned the positive class of "relevant paper".
+	* Papers involving AD pateients (i.e.+ at risk, Mild Cognitive Impairment, AD) should be assigned the positive class of "relevant paper".
 	* Biomarker specificity: Include studies addressing AD biomarkers such as Amyloid beta and tau proteins and assign the studies the positive class of "relevant paper". HOWEVER, if the biomarkers contain general neurdegeneration markers assign them the negative class of "irrelevant paper"
 	
 #3 If the paper mentions some kind of statisical analysis does the sample size exceed 50 (i.e. n >= 50)? 
