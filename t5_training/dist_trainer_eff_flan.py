@@ -522,9 +522,38 @@ if __name__ == '__main__':
         text = f.readlines()
         text = [line for line in text if line.strip()]
     
-    # Create dataset
-    dataset = T5Dataset(text, tokenizer)
+    import json
+
+    # Load JSON
+    with open(args.input_file, 'r') as f:
+        data = json.load(f)
+
+    texts = []
+    annotations = []
+
+    # Flatten json structure
+    for pmid, sections in data.items():
+        for section_type, content in sections.items():
+            section_text = " ".join(content.get("text", []))
+
+            section_annotations = []
+            for ann_group in content.get("annotation", []):
+                for ann_id, ann in ann_group.items():
+                    try:
+                        start = int(ann["offset"])
+                        end = start + int(ann["length"])
+                        section_annotations.append((start, end))
+                    except:
+                        continue
+
+            texts.append(section_text)
+            annotations.append(section_annotations)
     
+    dataset = T5Dataset(
+        texts=texts,
+        tokenizer=tokenizer,
+        annotations=annotations  # Pass list of spans
+    )
     # Clear CUDA cache
     torch.cuda.empty_cache()
     
