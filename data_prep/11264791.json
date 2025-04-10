@@ -1,0 +1,2206 @@
+{
+    "bioctype": "BioCCollection",
+    "source": "PMC",
+    "date": "20250202",
+    "key": "pmc.key",
+    "version": "1.0",
+    "infons": {},
+    "documents": [
+        {
+            "bioctype": "BioCDocument",
+            "id": "PMC11264791",
+            "infons": {
+                "license": "CC BY"
+            },
+            "passages": [
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 0,
+                    "infons": {
+                        "article-id_doi": "10.1186/s12877-024-05086-y",
+                        "article-id_pmc": "PMC11264791",
+                        "article-id_pmid": "39026228",
+                        "article-id_publisher-id": "5086",
+                        "elocation-id": "615",
+                        "kwd": "Social participation Dementia Realist evaluation Physical activity",
+                        "license": "Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article\u2019s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article\u2019s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/. The Creative Commons Public Domain Dedication waiver (http://creativecommons.org/publicdomain/zero/1.0/) applies to the data made available in this article, unless otherwise stated in a credit line to the data.",
+                        "name_0": "surname:Lorito;given-names:Claudio Di",
+                        "name_1": "surname:Pollock;given-names:Kristian",
+                        "name_2": "surname:Booth;given-names:Vicky",
+                        "name_3": "surname:Howe;given-names:Louise",
+                        "name_4": "surname:Goldberg;given-names:Sarah",
+                        "name_5": "surname:Godfrey;given-names:Maureen",
+                        "name_6": "surname:Dunlop;given-names:Marianne",
+                        "name_7": "surname:Harwood;given-names:Rowan H.",
+                        "name_8": "surname:Wardt;given-names:Veronika van der",
+                        "section_type": "TITLE",
+                        "title": "Keywords",
+                        "type": "front",
+                        "volume": "24",
+                        "year": "2024"
+                    },
+                    "text": "Social participation in the promoting activity, independence and stability in early dementia (PrAISED), a home-based therapy intervention for people living with dementia: a realist evaluation",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 192,
+                    "infons": {
+                        "section_type": "ABSTRACT",
+                        "type": "abstract_title_1"
+                    },
+                    "text": "Background",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 203,
+                    "infons": {
+                        "section_type": "ABSTRACT",
+                        "type": "abstract"
+                    },
+                    "text": "Interventions promoting social activity may reduce behavioural psychological symptoms and improve quality of life in people living with dementia. This study aimed to identify social benefits for participants living with dementia in the context of Promoting Activity, Independence and Stability in Early Dementia (PrAISED), an exercise intervention programme promoting physical activity and independence in participants living with dementia in England.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 655,
+                    "infons": {
+                        "section_type": "ABSTRACT",
+                        "type": "abstract_title_1"
+                    },
+                    "text": "Methods",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 663,
+                    "infons": {
+                        "section_type": "ABSTRACT",
+                        "type": "abstract"
+                    },
+                    "text": "This was a multi-method realist evaluation undertaking secondary analysis of data collected during the PrAISED process evaluation, including qualitative interviews with participants with dementia, caregivers and therapists, personal notes of researchers, and video recordings of therapy sessions. The study consisted of four phases: (1) Setting operational definition of social outcomes in PrAISED; (2) Developing Context, Mechanisms, Outcome (CMO) configurations; (3) Testing and refining CMOs; and (4) Synthesising definitive CMOs into a middle range theory.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 1224,
+                    "infons": {
+                        "section_type": "ABSTRACT",
+                        "type": "abstract_title_1"
+                    },
+                    "text": "Results",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 1232,
+                    "infons": {
+                        "section_type": "ABSTRACT",
+                        "type": "abstract"
+                    },
+                    "text": "Two CMOs were identified. (1) When therapists were able to make therapy sessions engaging and had the caregivers\u2019 support, the participants experienced therapy sessions as an opportunity to achieve goals in areas they were interested in. They also found the sessions enjoyable. This all led to the participants being highly engaged in their social interactions with the therapists. (2) When the participants realised that they were gaining benefits and progress through the PrAISED intervention, such as increased balance, this boosted their confidence in physical ability. It might also reduce caregivers\u2019 risk-aversion/gatekeeping attitude, which in turn would lead to participants\u2019 increased participation in social activities.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 1969,
+                    "infons": {
+                        "section_type": "ABSTRACT",
+                        "type": "abstract_title_1"
+                    },
+                    "text": "Conclusion",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 1980,
+                    "infons": {
+                        "section_type": "ABSTRACT",
+                        "type": "abstract"
+                    },
+                    "text": "The PrAISED intervention supported social participation in participants living with dementia. Under certain circumstances, home-based therapy interventions can be beneficial for social health (regardless of physical health gains). Given the limitations of currently available outcome measures to assess social participation, qualitative methods should be used to explore social health outcomes.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 2375,
+                    "infons": {
+                        "section_type": "ABSTRACT",
+                        "type": "abstract_title_1"
+                    },
+                    "text": "Supplementary Information",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 2401,
+                    "infons": {
+                        "section_type": "ABSTRACT",
+                        "type": "abstract"
+                    },
+                    "text": "The online version contains supplementary material available at 10.1186/s12877-024-05086-y.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 2493,
+                    "infons": {
+                        "section_type": "INTRO",
+                        "type": "title_1"
+                    },
+                    "text": "Introduction",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 2506,
+                    "infons": {
+                        "section_type": "INTRO",
+                        "type": "paragraph"
+                    },
+                    "text": "Dementia is a neurodegenerative condition characterised by progressive cognitive impairment and loss of functional ability and independence which reduce opportunities to maintain well-being and social activities. Research suggests that exercise and physical activity may have positive effects on functional independence, cognition and psychological health in people living with dementia.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 2894,
+                    "infons": {
+                        "section_type": "INTRO",
+                        "type": "paragraph"
+                    },
+                    "text": "Social health, a term which was first developed by Huber et al., and adapted for people living with dementia by the early detection and timely INTERvention in DEMentia (INTERDEM) Social Health Taskforce encompasses: (1) the capacity to fulfil one\u2019s potential and obligations; (2) the ability to manage life with some degree of independence; and (3) participation in social activities. Interventions promoting social activity in people living with dementuia have been developed and tested and have shown some reductions in behavioural and psychological symptoms as well as some improvements in quality of life.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 3506,
+                    "infons": {
+                        "section_type": "INTRO",
+                        "type": "paragraph"
+                    },
+                    "text": "The Promoting Activity, Independence and Stability in Early Dementia (PrAISED) intervention was an individually tailored exercise programme to promote physical activity and independence in participants living with mild cognitive impairment (MCI) and early dementia in England. A process evaluation was completed alongside the PrAISED Randomised Controlled Trial (RCT) to identify facilitators and barriers to the intervention and explore mechanisms of effect. The process evaluation found that increased social integration and community activities were a potential but unintended benefit of the PrAISED intervention that warranted further exploration.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 4158,
+                    "infons": {
+                        "section_type": "INTRO",
+                        "type": "paragraph"
+                    },
+                    "text": "Realist approaches are ideal to investigate complex interventions and \u201csocial change\u201d. Based on a realist perspective, any programme or intervention is trying to manufacture social change. In fact, \u201crealist approaches view human agency and social interactions as the very core of the change\u201d (, p125). PrAISED was therefore as much a psychosocial intervention as a physical health intervention, inevitably generating social participation through the interaction of the participant living with dementia, the caregiver(s), and the therapist(s).",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 4709,
+                    "infons": {
+                        "section_type": "INTRO",
+                        "type": "title_2"
+                    },
+                    "text": "Aim and objectives",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 4728,
+                    "infons": {
+                        "section_type": "INTRO",
+                        "type": "paragraph"
+                    },
+                    "text": "This realist evaluation aimed to identify and explain potential social benefits for people living with dementia resulting from interactions with therapists in the context of PrAISED intervention delivery. The objectives were to:",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 4957,
+                    "infons": {
+                        "section_type": "INTRO",
+                        "type": "paragraph"
+                    },
+                    "text": "1. Operationally define \u201csocial outcome(s)\u201d in the context of PrAISED.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 5032,
+                    "infons": {
+                        "section_type": "INTRO",
+                        "type": "paragraph"
+                    },
+                    "text": "2. Develop Context, Mechanisms, Outcome (CMO) configurations explaining how, under which circumstances and why the social outcomes occurred.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 5173,
+                    "infons": {
+                        "section_type": "INTRO",
+                        "type": "paragraph"
+                    },
+                    "text": "3. Test/refine CMOs.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 5194,
+                    "infons": {
+                        "section_type": "INTRO",
+                        "type": "paragraph"
+                    },
+                    "text": "4. Synthesise definitive CMOs to develop a middle range theory that can be repurposed and reused in different contexts by different health professionals and service providers supporting people living with dementia.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 5409,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "title_1"
+                    },
+                    "text": "Methods",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 5417,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "title_2"
+                    },
+                    "text": "Rationale",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 5427,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "paragraph"
+                    },
+                    "text": "This study adopted a multi-method realist approach as described by Pawson and Tilley, and is based on the RAMESES II reporting standards for realist evaluations. Realist evaluations provide a systematic yet flexible approach to identify the interacting CMOs generating outcomes within complex interventions, such as PrAISED. As such, they attempt to explain that which is not explicit within a complex intervention, explore generative causality, and develop clear hypotheses as to why a programme is or is not \u2018working\u2019. Realist approaches can also provide a framework for the analysis of multi-method data.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 6039,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "title_2"
+                    },
+                    "text": "Environment of evaluation",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 6065,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "paragraph"
+                    },
+                    "text": "This realist evaluation was based on secondary analyses of data from the PrAISED process evaluation. It was completed by a multidisciplinary research team working on PrAISED including two psychologists, a physiotherapist (PT), an occupational therapist (OT), a sociologist, two geriatricians and two Patient and Public Involvement Engagement (PPIE) members. Regular meetings to develop and undertake the evaluation were held online over 17 months during the PrAISED RCT (September 2021 to January 2023).",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 6569,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "title_2"
+                    },
+                    "text": "Description of the PrAISED intervention",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 6609,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "paragraph"
+                    },
+                    "text": "The intervention is described in detail elsewhere. In brief, PrAISED was a complex intervention delivered in participants\u2019 homes by PTs, OTs and Rehabilitation Support Workers (RSWs). Over 12 months, participants received up to 50 individualised therapy sessions (median 31, IQR 22\u201340) including supervised exercises, functional activities, support for inclusion in community activities, risk enablement and environmental assessments aiming to improve activities of daily living. Therapist visits were intended to support the exercises and activities, monitor progress and adjust the programme. With the intention of habit formation, therapy visits were tapered, with two visits per week at the start of the intervention programme, slowly being reduced to monthly visits towards the end of the intervention.\u00a0The typical visit would begin with routine questions around participant\u2019s health and wellbeing, followed by a review of the programme and goals. This was usually a discussion between the therapist, participant living with dementia and their caregiver (if any). The discussion was typically followed by an active part of the session, where the therapist and participant would perform some of the exercises and activities in the programme, and where the therapist introduced new exercises and activities, if appropriate. The caregiver would typically observe. The session would end with a discussion in which the therapist, participant living with dementia and caregiver agreed on some action points for the following session. Due to the Covid-19 pandemic, session delivery was interrupted and partly completed by telephone and videoconferencing (68% was delivered face-to-face, 26% by telephone, 6% by videoconference). In total, participants reported completing on average 482\u00a0min of PrAISED-related physical exercise per month (range 0\u20135310\u00a0min; 121\u00a0min/week). ",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 8492,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "title_2"
+                    },
+                    "text": "Recruitment and sampling strategy",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 8526,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "paragraph"
+                    },
+                    "text": "The sample of this study included all participants to the PrAISED process evaluation. Recruitment of participants for the process evaluation is described in detail elsewhere. In brief, participants were selected purposively from the PrAISED RCT to represent a diverse range of characteristics (e.g., age, gender, ethnicity, location, relationship and living status). Caregivers of participants living with dementia were also involved in the study, if both they and the participant agreed. Therapists were selected based on different professional roles and study sites.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 9095,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "title_2"
+                    },
+                    "text": "Data collection",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 9111,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "paragraph"
+                    },
+                    "text": "Qualitative interviews with participants with dementia (individually or jointly with caregivers, if preferred) and therapists. Interviews were carried out at two time points: start of the intervention and before the end at month\u00a012.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 9345,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "paragraph"
+                    },
+                    "text": "Personal notes and observations of researchers, routinely compiled on completion of each interview.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 9445,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "paragraph"
+                    },
+                    "text": "Video recordings of therapy sessions.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 9483,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "paragraph"
+                    },
+                    "text": "The following data were used for this realist evaluation:",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 9541,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "title_2"
+                    },
+                    "text": "Data analysis",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 9555,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "paragraph"
+                    },
+                    "text": "The realist evaluation consisted of four analytic phases based on the four objectives (Fig.\u00a01): (1) Operational definition of social outcomes in PrAISED; (2) Developing CMOs; (3) Testing and refining CMOs; and (4) Synthesising definitive CMOs into a middle range theory.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 9827,
+                    "infons": {
+                        "file": "12877_2024_5086_Fig1_HTML.jpg",
+                        "id": "Fig1",
+                        "section_type": "FIG",
+                        "type": "fig_caption"
+                    },
+                    "text": "Process of realist evaluation analysis",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 9866,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "title_2"
+                    },
+                    "text": "Objective 1: operational definition of \u201csocial outcome(s)\u201d in PrAISED",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 9940,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "paragraph"
+                    },
+                    "text": "This stage occurred through bi-monthly meetings of the realist evaluation team, held between September 2021 and June 2022. In the first meetings, the team discussed concepts and theories of social opportunities, interactions and inclusion for people living with dementia. Based on the conceptualisation of social inclusion by Pinkert et al., the team developed consensus on what is intended by \u2018social participation\u2019 and at which ecological levels it occurred in PrAISED (Table\u00a01). For each level, the model also identified the people that the participant living with dementia had social interactions with during the time they were receiving PrAISED.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 10596,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "paragraph"
+                    },
+                    "text": "The term \u2018social participation\u2019 was chosen instead of Pinkert\u2019s \u2018social inclusion\u2019 as the emphasis in the intervention was on individual interactions rather than on wider societal inclusion. At the micro-level (i.e., the immediate relationships of the participant in PrAISED), social interactions occurred with the primary informal caregiver, all other family members and other people providing in-home support (e.g., paid caregivers). At the meso-level (i.e., people external to the home who came into interaction with the micro-system) were interactions with the therapists delivering PrAISED. At the macro-level (i.e., people in the larger community and society) were interactions with neighbours and friends, attendees at community events, other health care professionals and other people in the community.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 11417,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "paragraph"
+                    },
+                    "text": "The model guided the selection of the Contexts (C\u2019s). These included social interactions and activities initiated and supported through the PrAISED intervention that were meaningful to the person with dementia.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 11630,
+                    "infons": {
+                        "file": "Tab1.xml",
+                        "id": "Tab1",
+                        "section_type": "TABLE",
+                        "type": "table_caption"
+                    },
+                    "text": "Model adapted from Pinkert et al. for PrAISED social participation",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 11697,
+                    "infons": {
+                        "file": "Tab1.xml",
+                        "id": "Tab1",
+                        "section_type": "TABLE",
+                        "type": "table",
+                        "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<table frame=\"hsides\" rules=\"groups\"><thead><tr><th align=\"left\">Ecological level</th><th align=\"left\">Micro (The immediate relationships of participants in PrAISED)</th><th align=\"left\">Meso (People external to the home interacting with the Micro system in the context of PrAISED)</th><th align=\"left\">Macro (Interactions and relations of participant in PrAISED in the community and society)</th></tr></thead><tbody><tr><td align=\"left\">Examples of social inclusion at ecological level</td><td align=\"left\"><p>Interactions with:</p><p>\u2022 Caregiver</p><p>\u2022 Family members</p><p>\u2022 Other in-home supporters</p></td><td align=\"left\"><p>Interactions with:</p><p>\u2022 PTs</p><p>\u2022 OTs</p><p>\u2022 RSWs</p><p>\u2022 Other PrAISED team members</p></td><td align=\"left\"><p>Interactions with:</p><p>\u2022 Neighbours</p><p>\u2022 Friends</p><p>\u2022 Attendees at community events, groups, classes, activities</p><p>\u2022 Health care professionals (e.g., GP)</p><p>\u2022 Other people in the community (e.g., shops, cafes, holidays)</p></td></tr></tbody></table>\n"
+                    },
+                    "text": "Ecological level\tMicro (The immediate relationships of participants in PrAISED)\tMeso (People external to the home interacting with the Micro system in the context of PrAISED)\tMacro (Interactions and relations of participant in PrAISED in the community and society)\t \tExamples of social inclusion at ecological level\tInteractions with:\u2022 Caregiver\u2022 Family members\u2022 Other in-home supporters\tInteractions with:\u2022 PTs\u2022 OTs\u2022 RSWs\u2022 Other PrAISED team members\tInteractions with:\u2022 Neighbours\u2022 Friends\u2022 Attendees at community events, groups, classes, activities\u2022 Health care professionals (e.g., GP)\u2022 Other people in the community (e.g., shops, cafes, holidays)\t \t",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 12375,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "title_2"
+                    },
+                    "text": "Objective 2: development of CMOs",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 12408,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "paragraph"
+                    },
+                    "text": "The development of the initial CMOs involved iterative secondary analysis of about 10% of PrAISED process evaluation interviews and video recordings of therapy sessions delivered to participants in the intervention arm of the PrAISED RCT. Three members of the realist evaluation team (CDL, VvdW and KP) analysed two interview transcripts and two therapy session videos independently of each other and noted down potential contexts and mechanisms generating participant-level social participation. Social participation as an outcome was the focus of this initial review. Each team member generated \u2018rough\u2019 CMOs.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 13023,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "paragraph"
+                    },
+                    "text": "Subsequently, the team discussed these and created seven defined CMOs based on commonalities of rough CMOs through thematic analysis. Two team members with a research background (CDL and VvdW) and two PPIE members with lived experience of caring for someone living with dementia (MG and MD) were then invited to rank the resulting CMOs by relevance/importance. The researchers evaluated the relevance/importance of CMOs based on their reflection of the data and observations throughout the data collection, while the PPIE members based their evaluations on their experience of interviewing participants, and their own lived experience. The input from the two PPIE members ensured that the ranking reflected the views of those affected by dementia. The four CMOs with the highest ranking were passed to the next stage (see appendix 1).",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 13858,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "title_2"
+                    },
+                    "text": "Objective 3: testing and refining CMOs",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 13897,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "paragraph"
+                    },
+                    "text": "The four CMOs that passed the previous stage were tested using the remaining video recordings and interviews. Two coders (CDL and VvdW) analysed the transcripts (each transcript was only looked at by one rater) independently of each other and extracted quotations that corresponded to the C\u2019s, M\u2019s and O\u2019s. Quotations were extracted if they included at least two elements of the CMOs (e.g., mechanism and outcome)\u00a0and were related to social outcomes. A matrix was created in Microsoft Excel, listing in the rows the Cs, Ms and Os, and in the columns the participants\u2019 anonymised study IDs. The matrix was populated with the extracted quotations. The two PPIE contributors double checked the matrix.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 14605,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "paragraph"
+                    },
+                    "text": "One of five actions was used to reach consensus for each CMOs based on extracted quotations:",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 14698,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "paragraph"
+                    },
+                    "text": "Confirming the CMOs in their original configuration.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 14751,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "paragraph"
+                    },
+                    "text": "Edit the CMOs by eliminating/adding/rephrasing C\u2019s and M\u2019s.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 14815,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "paragraph"
+                    },
+                    "text": "Discarding the CMOs altogether when no data was available to test it.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 14885,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "paragraph"
+                    },
+                    "text": "Merging the CMOs with another one, when similarities emerged from the data.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 14961,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "paragraph"
+                    },
+                    "text": "Separating one CMO into two separate ones, when data showed that they were dissimilar.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 15048,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "paragraph"
+                    },
+                    "text": "Two CMOs remained after the first testing phase, which were passed to a refinement stage. This was carried out through testing the quotations supporting CMOs against personal notes and observations of researchers, routinely compiled on completion of each process evaluation interview. In this iteration, for each of the two CMOs, triangulation between the quotations and the other data sources was undertaken, using the \u201cfollowing a thread\u201d technique. This consisted in using the quotation as starting point and, by \u201cfollowing the thread in the other data sources\u201d, testing the CMOs. In this iteration, the CMOs could not be discarded but the confirmation and refinement process as described above was completed. The resulting CMOs were passed to the PPIE contributors for final review based on their lived experience of dementia.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 15887,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "title_2"
+                    },
+                    "text": "Objective 4: synthesising CMOs into a middle range theory",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 15945,
+                    "infons": {
+                        "section_type": "METHODS",
+                        "type": "paragraph"
+                    },
+                    "text": "The CMOs were synthesised into a model of interdependent components. Checking the model against research reported in scientific literature, a middle range theory was proposed.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 16121,
+                    "infons": {
+                        "section_type": "RESULTS",
+                        "type": "title_1"
+                    },
+                    "text": "Results",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 16129,
+                    "infons": {
+                        "section_type": "RESULTS",
+                        "type": "title_2"
+                    },
+                    "text": "Description of sample",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 16151,
+                    "infons": {
+                        "section_type": "RESULTS",
+                        "type": "paragraph"
+                    },
+                    "text": "CMOs were developed and tested using 24 interviews with participants with dementia and caregivers, 24 with therapists, 14 video recordings of therapy sessions, and personal observations and comments of the interviewers associated with each interview. Participants\u2019 and caregivers\u2019 characteristics, as well as information on their interviews are presented in Appendix 2. Therapists\u2019 characteristics and information on their interviews are reported in Appendix 3. Information on video recordings is presented in Appendix 4.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 16679,
+                    "infons": {
+                        "section_type": "RESULTS",
+                        "type": "title_2"
+                    },
+                    "text": "Main findings",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 16693,
+                    "infons": {
+                        "section_type": "RESULTS",
+                        "type": "paragraph"
+                    },
+                    "text": "The initial seven CMOs are reported in Appendix 1. Of the four CMOs ranked the highest and tested using the data and procedures outlined above, two were discarded. In one case quotations evidenced that irregularity/tapering led to less exercising but not that this led in turn to fewer social activities; in the other case, the data did not clarify sufficiently enough the differences in rapport between RSWs and PTs/OTs. The remaining two CMOs were refined and are presented below in their definitive version.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 17204,
+                    "infons": {
+                        "section_type": "RESULTS",
+                        "type": "title_2"
+                    },
+                    "text": "Positive engagement of the therapist (CMO 1)",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 17249,
+                    "infons": {
+                        "section_type": "RESULTS",
+                        "type": "paragraph"
+                    },
+                    "text": "\u2018When therapists were able to make therapy sessions engaging and had the caregiver\u2019s support (C), the participants experienced therapy sessions as an opportunity to achieve goals in areas they were interested in (M). They also found the sessions enjoyable (M). This all led to the participants being highly engaged in their social interactions with the therapists (O)\u2019.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 17625,
+                    "infons": {
+                        "section_type": "RESULTS",
+                        "type": "paragraph"
+                    },
+                    "text": "This CMO examined how positive engagement with therapists could be achieved in the PrAISED intervention by doing activities that the participants enjoyed. The video recordings of one therapy session showed, for example, the participant and therapist putting up a dartboard with the help of the caregiver and starting a game of darts, for which the therapist had brought the equipment. The interactions between participant, caregiver and therapist showed that they enjoyed the game and the rapport building that this activity generated between the therapist and both participant and caregiver.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 18218,
+                    "infons": {
+                        "section_type": "RESULTS",
+                        "type": "paragraph"
+                    },
+                    "text": "The interview data reflected this. Participants living with dementia, caregivers and therapists often acknowledged that the pleasant and motivating sessions were an instrumental mechanism in promoting the participants\u2019 successes and enjoyment of the sessions, which would result in a positive social engagement with the therapists. A parallel or reinforcing mechanism emerging from the interviews was achieving therapy goals, which contributed to the positive experience of the sessions and promoted trust in the therapists. For example, when participants achieved their walking goal, increasing their mobility, the intervention was perceived as having a positive impact on their lives.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 18907,
+                    "infons": {
+                        "section_type": "RESULTS",
+                        "type": "paragraph"
+                    },
+                    "text": "The interviews with participants living with dementia and caregivers as well as the interviewers\u2019 observational notes showed that participants and caregivers valued their relationship with the therapists for different reasons. For some it felt close to friendship; others appreciated the therapists\u2019 visits as a means for general support, an opportunity to be active and/or a source of information. The data from the therapists\u2019 interviews reflected their role in the engagement of the participants. In several instances, participants and caregivers would feel quite close to the therapists and became anxious towards the end of the intervention. In the interviews, some therapists expressed concerns about the participants\u2019 potential dependency on them and feelings of being left alone. Some participants living with dementia and caregivers did indeed express a fear towards the end of the intervention of losing contact with the therapists.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 19858,
+                    "infons": {
+                        "section_type": "RESULTS",
+                        "type": "title_2"
+                    },
+                    "text": "Self-efficacy in people living with dementia (programme theory 2)",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 19924,
+                    "infons": {
+                        "section_type": "RESULTS",
+                        "type": "paragraph"
+                    },
+                    "text": "\u2018When the participants realised that they were gaining benefits and progress through the PrAISED intervention, such as increased balance (C), this boosted their confidence in physical ability (M). It might also reduce caregivers\u2019 risk-aversion/gatekeeping attitude, which in turn would lead to participants\u2019 increased participation in social activities (O).)\u2019.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 20293,
+                    "infons": {
+                        "section_type": "RESULTS",
+                        "type": "paragraph"
+                    },
+                    "text": "This CMO investigated perception of physical improvements in the participants living with dementia as well as their caregivers. Awareness of improvements supported a sense of higher self-efficacy in the person living with dementia. It could also increase caregivers\u2019 confidence that the person they care for would be able to manage the physical challenges associated with social activities, and therefore reduce their gatekeeping attitude and risk aversion. For example, some caregivers expressed in the interviews that in the beginning of the intervention they had been worried about the person they cared for being more physically active. However, seeing the progression in mobility, they had gained confidence that the person could be more active in and out of the house with no risk to safety.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 21093,
+                    "infons": {
+                        "section_type": "RESULTS",
+                        "type": "paragraph"
+                    },
+                    "text": "Discussions about positive risk-taking were also part of the intervention and would therefore be initiated by the therapist. The interviews indicated that when both participant living with dementia and caregiver became aware of the improvements in mobility and physical abilities, this was an opportunity for the participant living with dementia to become more active. While it was often clear in the interviews that improvements in physical ability increased confidence, sometimes it might have just been the reassurance of the therapist\u2019s help if things went wrong. These participants might not have had the confidence to go out without the therapist going with them.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 21765,
+                    "infons": {
+                        "section_type": "RESULTS",
+                        "type": "paragraph"
+                    },
+                    "text": "Increased confidence could lead the person to undertake more physical activity outside on their own or with support from the therapist and/or garegiver. For some participants, this meant that they could start visiting caf\u00e9s, shops, or engaging in other social activities such as going to dementia groups. For those who had already routinely engaged in some of these activities before the intervention, it meant that they could continue or expand these activities.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 22230,
+                    "infons": {
+                        "section_type": "RESULTS",
+                        "type": "paragraph"
+                    },
+                    "text": "Therapists\u2019 experiences and reflections recorded in the interviews supported this CMO. They regarded the confidence in the participant\u2019s ability to go out and the resulting decrease in risk-aversion or gatekeeping in the caregiver as an important element for joining (social) activities outside the house.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 22540,
+                    "infons": {
+                        "section_type": "RESULTS",
+                        "type": "title_2"
+                    },
+                    "text": "Interdependence between CMOs: development of a middle range theory",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 22607,
+                    "infons": {
+                        "section_type": "RESULTS",
+                        "type": "paragraph"
+                    },
+                    "text": "While the data supported the two separate components of the CMOs, they also indicated a complex, interdependent relationship between the CMOs. This was synthesized in a middle range theory reported in Fig.\u00a02. In brief, engaging therapy sessions and support by the caregiver were the context for achieving goals and enjoyment, but also for gaining improvements in physical ability, resulting in a perception of benefits. While achieving goals and the opportunity to have fun during the therapy sessions were the mechanisms for positive and meaningful social interactions with the therapist, the perception of gaining benefits and making progress could be considered both a context or a mechanism for the participant to feel more confident in their own ability and for the caregiver to reduce their gate keeping attitudes and encourage social activities.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 23461,
+                    "infons": {
+                        "file": "12877_2024_5086_Fig2_HTML.jpg",
+                        "id": "Fig2",
+                        "section_type": "FIG",
+                        "type": "fig_caption"
+                    },
+                    "text": "Middle-range theory: Interdependence model of CMOs",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 23512,
+                    "infons": {
+                        "section_type": "DISCUSS",
+                        "type": "title_1"
+                    },
+                    "text": "Discussion",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 23523,
+                    "infons": {
+                        "section_type": "DISCUSS",
+                        "type": "title_2"
+                    },
+                    "text": "Summary of findings",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 23543,
+                    "infons": {
+                        "section_type": "DISCUSS",
+                        "type": "paragraph"
+                    },
+                    "text": "This was a realist evaluation exploring how, under what circumstances and why, the PrAISED intervention could contribute to social participation in participants living with dementia. The concept of social participation for this study was based on a model adapted from Pinkert et al. to reflect different social interactions the participants experienced during their involvement with PrAISED. The adapted model proposed three ecological levels of social participation through interactions within the home (e.g., caregivers; micro level), interactions with the PrAISED team (meso level) and interactions with the wider community (macro level).",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 24185,
+                    "infons": {
+                        "section_type": "DISCUSS",
+                        "type": "paragraph"
+                    },
+                    "text": "The three different levels of this model (micro, meso and macro) are reflected in the results: the outcomes \u2018social interaction with therapist\u2019 and \u2018social activities in the community\u2019 corresponded with the meso and macro levels of the social participation model. Interactions between the participant living with dementia and their caregiver were often a part of the intervention, but in our study, these were not considered an outcome but rather context and mechanism factors.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 24671,
+                    "infons": {
+                        "section_type": "DISCUSS",
+                        "type": "paragraph"
+                    },
+                    "text": "The study used secondary data from the PrAISED process evaluation, identified and validated two CMOs, and synthesised these into a middle range theory. The study found that PrAISED contributed to social participation either through engagement in social interactions with the therapists and/or by supporting social activities outside the home. Important contextual factors included the quality and enjoyment of intervention sessions, increased confidence in participant\u2019s own physical abilities, perception of benefits and progress and caregiver support.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 25227,
+                    "infons": {
+                        "section_type": "DISCUSS",
+                        "type": "paragraph"
+                    },
+                    "text": "The findings showed that therapy sessions, which were supported by the caregiver, and which were perceived as beneficial by the participant led to strong rapport building with the therapist as well as social activities outside the participant\u2019s home. Key mechanisms were achieving goals, enjoying working with the therapist, increasing confidence in one\u2019s own physical abilities and the caregiver accepting the risk of the person with dementia being more active. For some participants and their caregivers, the relationship with the therapist was perceived as vital support, which made them fearful of the end of the intervention\u00a0(and discontinuation of that support). Some therapists also recognised a risk for dependency on their support.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 25973,
+                    "infons": {
+                        "section_type": "DISCUSS",
+                        "type": "paragraph"
+                    },
+                    "text": "These findings bring potential evidence to the negative results of the PrAISED RCT\u00a0. Specifically, they contradict the expectation that therapists could taper support and visits over time and that participants would maintain exercise levels (and associated benefits) because of habit formation. Instead, it appears that continuing engagement of the therapist seemed necessary for participant engagement.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 26378,
+                    "infons": {
+                        "section_type": "DISCUSS",
+                        "type": "title_2"
+                    },
+                    "text": "Comparison with existing literature",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 26414,
+                    "infons": {
+                        "section_type": "DISCUSS",
+                        "type": "paragraph"
+                    },
+                    "text": "Findings from this study reflect the evidence reported in previous literature on the effectiveness of in-person therapy sessions. In our previous study comparing remote versus in-person delivery of PrAISED, we found that while video consultations are acceptable in certain circumstances (e.g., when social distancing is required, in large geographical areas), an in-person approach to rehabilitation better responds to patients\u2019 social needs. In an interview study with older adults using home care services in Norway and Denmark home care visits were also found to bring social life into the house, and could reduce feelings of loneliness. In particular, if the visits were seen as exceeding the expected routine-based care, they had a greater symbolic meaning of inclusiveness for those receiving the care.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 27225,
+                    "infons": {
+                        "section_type": "DISCUSS",
+                        "type": "paragraph"
+                    },
+                    "text": "This is likely to have played a role in PrAISED intervention visits as well, as therapist visits were on average considerably longer than standard community care visits [71\u00a0min vs. 30\u00a0min; ]. Norvoll et al. indicated that home care visits can initiate social participation opportunities outside the home, which is reflected in our results. These social activities do not necessarily refer to joining local community activities, but can include smaller interactions such as going shopping or visiting a caf\u00e9. Meaningful interactions typically occurred within therapy visits in PrAISED, which was based on the ethos and principles of person-centred care. The opportunity for the participants to be recognised and validated by the therapists in the context of therapy visits enhanced rapport building and social interactions.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 28051,
+                    "infons": {
+                        "section_type": "DISCUSS",
+                        "type": "paragraph"
+                    },
+                    "text": "In relation to the benefits reported from these social interactions, while there is some evidence that social participation and inclusion is associated with health outcomes in older people, this could not be confirmed in PrAISED, as the RCT found no difference in health-related outcomes between intervention and control groups. It is also important to acknowledge that not all therapists/participants/caregivers established positive health-enhancing relationships. The videos included some sessions in which the participant and caregiver did not seem at ease, did not enjoy themselves, and at times disengaged. This diversity in experiences calls for caution when suggesting a causal relationship between social interactions/participation and health outcomes in people with dementia.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 28836,
+                    "infons": {
+                        "section_type": "DISCUSS",
+                        "type": "paragraph"
+                    },
+                    "text": "Different interventions have been designed and tested to increase social participation and inclusion of people living with dementia, often based on the use of technology. However, our evaluation indicated that interventions including regular home visits supporting independence in people living with dementia might lead to social participation as an added benefit, independent of the focus of the intervention. \u2018Importance of relationships\u2019 and \u2018communication\u2019 have been included in the core outcome items set for non-pharmacological community-based health and social care interventions but these do not encompass all aspects of social participation or inclusion. In light of the evident benefits of social interaction with therapists, this realist evaluation adds to the growing evidence that other less \u201cstatistically measurable\u201d outcomes than traditional \u201chealth gains\u201d are also important to people living with dementia. Appropriate outcome measures for people with dementia therefore should be developed.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 29861,
+                    "infons": {
+                        "section_type": "DISCUSS",
+                        "type": "paragraph"
+                    },
+                    "text": "The contexts and mechanisms identified within CMOs have been documented before in the literature. The importance of the therapeutic relationship or alliance between a patient and their therapist, for example, was identified in physiotherapy studies. A previous realist review by the team identified the importance of the perception of benefit within exercise to support participation of people living with dementia. Self-efficacy has also been identified as a motivational aid. However, this is the first time these components have been evidenced as supporting social participation in people living with dementia.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 30475,
+                    "infons": {
+                        "section_type": "DISCUSS",
+                        "type": "title_2"
+                    },
+                    "text": "Strengths, limitations and future directions",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 30520,
+                    "infons": {
+                        "section_type": "DISCUSS",
+                        "type": "paragraph"
+                    },
+                    "text": "This study was characterised by certain strengths and limitations. It was rigorously carried out and reported, based on the RAMESES II reporting standards for realist evaluations. It generated novel insights into the social health benefits of intensive home-based exercise interventions for people living with dementia, showing that social participation can be an additional outcome of a physical activity intervention set in in a home environment. Another strength of the study was the consistent PPIE contribution throughout the evaluation. The two PPIE members who were also part of the PrAISED research group and are co-authors on this paper (MD and MG) took part in the meetings to develop the initial CMOs, were co-interviewers in eight interviews with participants and caregivers, and actively contributed to the analysis of the interview and video-recording data. Another strength was ethnographic observation and recording of therapy sessions. Despite the fact that direct observation was time-consuming and lengthy, it allowed us to observe behaviour, attitudes and responses in an ecological and spontaneous way.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 31644,
+                    "infons": {
+                        "section_type": "DISCUSS",
+                        "type": "paragraph"
+                    },
+                    "text": "The study also had some limitations. The data collection and interview guidelines were not developed for this realist evalutaion, but for the process evaluation of the PrAISED RCT. This might have limited the collection of data relating to social participation, as this was not a focus in the interview topic guides. Social interactions important to the participants might not have been mentioned in the interviews or video recordings. Some of the initial CMOs might have been substantiated if interview questions focussed on social participation.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 32192,
+                    "infons": {
+                        "section_type": "DISCUSS",
+                        "type": "paragraph"
+                    },
+                    "text": "Ad hoc topic guides might have elicited evidence on less positive social interactions between therapists and participants such as awkward conversations or moments when the participant seemed to feel unsure about an activity. While our data showed examples of these, there was not sufficient evidence to develop specific CMOs regarding negative effects on social participation. Further research to corroborate this evidence would be valuable.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 32634,
+                    "infons": {
+                        "section_type": "DISCUSS",
+                        "type": "paragraph"
+                    },
+                    "text": "Future research could also focus on people living with different stages of dementia and/or not currently involved in an exercise or physical activity intervention, to explore if intensive face-to-face interventions support social participation independent of a focus on physical activity. Furthermore, it is important to acknowledge that our data represented only a very limited snapshot of the complexity of participants\u2019 and caregivers\u2019 lives. The strict application of contexts, mechanisms and outcomes within the \u201ctime-bound\u201d context of PrAISED did not reflect the interactive and changeable nature of social participation.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 33270,
+                    "infons": {
+                        "section_type": "DISCUSS",
+                        "type": "paragraph"
+                    },
+                    "text": "Future research may also wish to focus on gaining a wider representation of views from people living with dementia from more diverse backgrounds, which were underrepresented in our study. The impact of a multicomponent intervention such as PrAISED may influence people living with dementia in different ways throughout the progressive condition based on different socio-cultural expectations on social relations/interactions. Finally, we only included participants living with dementia who had an informal caregiver. Involving people with no support would be crucial in future research, as they may experience a higher risk of social isolation. Of resounding importance is the continued co-production and involvement of PPIE representatives of people living with dementia from diverse communities within any future study.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 34092,
+                    "infons": {
+                        "section_type": "CONCL",
+                        "type": "title_1"
+                    },
+                    "text": "Conclusion",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 34103,
+                    "infons": {
+                        "section_type": "CONCL",
+                        "type": "paragraph"
+                    },
+                    "text": "The results of this realist evaluation showed that the PrAISED intervention supported social participation in people living with dementia, indicating that under certain circumstances intensive home-based therapy intervention can be beneficial for social health (regardless of physical health gains). The therapeutic relationship, perception of the benefits and progress of the person living with dementia, support from caregivers, and how these and other contextual components interact, are important factors that can lead to increased social activities in this population. Given the limitations of currently available outcome measures to assess social participation, qualitative methods, including ethnography and conversation analysis, should be used to explore this as part of other social health outcomes. Nonetheless, it is equally important to develop appropriate quantitative assessments for people living with dementia as social participation might also mediate the effect of other parameters. Even if evidence for the effect of physical health interventions in people living with dementia is limited, future research should address social health in intensive home-based therapy interventions.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 35305,
+                    "infons": {
+                        "section_type": "CONCL",
+                        "type": "title_2"
+                    },
+                    "text": "Electronic supplementary material",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 35339,
+                    "infons": {
+                        "section_type": "CONCL",
+                        "type": "paragraph"
+                    },
+                    "text": "Below is the link to the electronic supplementary material.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 35399,
+                    "infons": {
+                        "section_type": "CONCL",
+                        "type": "footnote"
+                    },
+                    "text": "Publisher\u2019s Note",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 35418,
+                    "infons": {
+                        "section_type": "CONCL",
+                        "type": "footnote"
+                    },
+                    "text": "Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 35537,
+                    "infons": {
+                        "section_type": "AUTH_CONT",
+                        "type": "title"
+                    },
+                    "text": "Author contributions",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 35558,
+                    "infons": {
+                        "section_type": "AUTH_CONT",
+                        "type": "paragraph"
+                    },
+                    "text": "C.D.L. contributed to the conception and design of the study, data cleaning, data analysis, and the write up of the manuscript. K.P. contributed to data cleaning, data analysis, and provided feedback on the manuscript. V.B. contributed to data validation and writing the manuscript. L.H. contributed to data validation and writing the manuscript. S.G. contributed to data validation and writing the manuscript. M.G. contributed as PPIE collaborator to data analysis and revision of the manuscript. M.D. contributed as PPIE collaborator to data analysis and revision of the manuscript. R.H. contributed to the conception and design of the study and provided feedback and final approval of the manuscript. V.v.d.W. contributed to the conception and design of the study, data cleaning, data analysis, and the write up of the manuscript. All authors reviewed the manuscript.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 36429,
+                    "infons": {
+                        "section_type": "ACK_FUND",
+                        "type": "title"
+                    },
+                    "text": "Funding",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 36437,
+                    "infons": {
+                        "section_type": "ACK_FUND",
+                        "type": "paragraph"
+                    },
+                    "text": "This work was funded by the National Institute for Health Research (NIHR) under its Programme Grants for Applied Research Programme (Reference Number RP-PG-0614- 20007). The views expressed are those of the author(s) and not necessarily those of the NIHR or the Department of Health and Social Care.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 36737,
+                    "infons": {
+                        "section_type": "SUPPL",
+                        "type": "title"
+                    },
+                    "text": "Data availability",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 36755,
+                    "infons": {
+                        "section_type": "SUPPL",
+                        "type": "paragraph"
+                    },
+                    "text": "The datasets generated and analysed during the current study are not publicly available to safeguard anonymity of participants but are available from the corresponding author on reasonable request.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 36953,
+                    "infons": {
+                        "section_type": "SUPPL",
+                        "type": "title"
+                    },
+                    "text": "Declarations",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 36966,
+                    "infons": {
+                        "section_type": "SUPPL",
+                        "type": "title"
+                    },
+                    "text": "Ethics approval and consent to participate",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 37009,
+                    "infons": {
+                        "section_type": "SUPPL",
+                        "type": "paragraph"
+                    },
+                    "text": "The study was conducted according to the Declaration of Helsinki and The University of Nottingham\u2019s Code of Research Conduct and Research Ethics. The PrAISED RCT has received ethical approval number 18/YH/0059 from the Bradford/Leeds Ethics Committee. At the beginning of their involvement in PrAISED, participants were asked to provide informed consent to participate in the study.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 37394,
+                    "infons": {
+                        "section_type": "SUPPL",
+                        "type": "title"
+                    },
+                    "text": "Consent for publication",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 37418,
+                    "infons": {
+                        "section_type": "SUPPL",
+                        "type": "paragraph"
+                    },
+                    "text": "Not applicable.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 37434,
+                    "infons": {
+                        "section_type": "COMP_INT",
+                        "type": "title"
+                    },
+                    "text": "Competing interests",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 37454,
+                    "infons": {
+                        "section_type": "COMP_INT",
+                        "type": "paragraph"
+                    },
+                    "text": "The authors declare no competing interests.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 37498,
+                    "infons": {
+                        "section_type": "REF",
+                        "type": "title"
+                    },
+                    "text": "References",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 37509,
+                    "infons": {
+                        "citation-alternatives": "Woods B. Promoting well-being and independence for people with dementia. Int J Geriatr Psychiatry. 1999;14(2):97\u2013105.\n",
+                        "fpage": "97",
+                        "issue": "2",
+                        "lpage": "105",
+                        "name_0": "surname:Woods;given-names:B",
+                        "pub-id_doi": "10.1002/(SICI)1099-1166(199902)14:2<97::AID-GPS941>3.0.CO;2-X",
+                        "pub-id_pmid": "10885861",
+                        "section_type": "REF",
+                        "source": "Int J Geriatr Psychiatry",
+                        "type": "ref",
+                        "volume": "14",
+                        "year": "1999"
+                    },
+                    "text": "Promoting well-being and independence for people with dementia",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 37572,
+                    "infons": {
+                        "citation-alternatives": "Peach T, Pollock K, Wardt V, R das Nair van der, Logan P, Harwood RH. Attitudes of older people with mild dementia and mild cognitive impairment and their relatives about falls risk and prevention: a qualitative study. PLoS ONE. 2017;12(5):e0177530.\n",
+                        "fpage": "e0177530",
+                        "issue": "5",
+                        "name_0": "surname:Peach;given-names:T",
+                        "name_1": "surname:Pollock;given-names:K",
+                        "name_2": "surname:Wardt;given-names:V",
+                        "name_3": "surname:R das Nair;given-names:van der",
+                        "name_4": "surname:Logan;given-names:P",
+                        "name_5": "surname:Harwood;given-names:RH",
+                        "pub-id_doi": "10.1371/journal.pone.0177530",
+                        "pub-id_pmid": "28542315",
+                        "section_type": "REF",
+                        "source": "PLoS ONE",
+                        "type": "ref",
+                        "volume": "12",
+                        "year": "2017"
+                    },
+                    "text": "Attitudes of older people with mild dementia and mild cognitive impairment and their relatives about falls risk and prevention: a qualitative study",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 37720,
+                    "infons": {
+                        "citation-alternatives": "Law CK, Lam FM, Chung RC, Pang MY. Physical exercise attenuates cognitive decline and reduces behavioural problems in people with mild cognitive impairment and dementia: a systematic review. J Physiother. 2020;66(1):9\u201318.\n",
+                        "fpage": "9",
+                        "issue": "1",
+                        "lpage": "18",
+                        "name_0": "surname:Law;given-names:CK",
+                        "name_1": "surname:Lam;given-names:FM",
+                        "name_2": "surname:Chung;given-names:RC",
+                        "name_3": "surname:Pang;given-names:MY",
+                        "pub-id_doi": "10.1016/j.jphys.2019.11.014",
+                        "pub-id_pmid": "31843427",
+                        "section_type": "REF",
+                        "source": "J Physiother",
+                        "type": "ref",
+                        "volume": "66",
+                        "year": "2020"
+                    },
+                    "text": "Physical exercise attenuates cognitive decline and reduces behavioural problems in people with mild cognitive impairment and dementia: a systematic review",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 37875,
+                    "infons": {
+                        "section_type": "REF",
+                        "type": "ref"
+                    },
+                    "text": "Nuzum H, Stickel A, Corona M, Zeller M, Melrose RJ, Wilkins SS. Potential benefits of physical activity in MCI and dementia. Behav Neurol. 2020;2020.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 38025,
+                    "infons": {
+                        "citation-alternatives": "Huber M, Knottnerus JA, Green L, van der Horst H, Jadad AR, Kromhout D, et al. How should we define health? BMJ. 2011;343:d4163.\n",
+                        "fpage": "d4163",
+                        "name_0": "surname:Huber;given-names:M",
+                        "name_1": "surname:Knottnerus;given-names:JA",
+                        "name_2": "surname:Green;given-names:L",
+                        "name_3": "surname:van der Horst;given-names:H",
+                        "name_4": "surname:Jadad;given-names:AR",
+                        "name_5": "surname:Kromhout;given-names:D",
+                        "pub-id_doi": "10.1136/bmj.d4163",
+                        "pub-id_pmid": "21791490",
+                        "section_type": "REF",
+                        "source": "BMJ",
+                        "type": "ref",
+                        "volume": "343",
+                        "year": "2011"
+                    },
+                    "text": "How should we define health?",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 38054,
+                    "infons": {
+                        "citation-alternatives": "Dr\u00f6es RM, Chattat R, Diaz A, Gove D, Graff M, Murphy K, et al. Social health and dementia: a European consensus on the operationalization of the concept and directions for research and practice. Aging Ment Health. 2017;21(1):4\u201317.\n",
+                        "fpage": "4",
+                        "issue": "1",
+                        "lpage": "17",
+                        "name_0": "surname:Dr\u00f6es;given-names:RM",
+                        "name_1": "surname:Chattat;given-names:R",
+                        "name_2": "surname:Diaz;given-names:A",
+                        "name_3": "surname:Gove;given-names:D",
+                        "name_4": "surname:Graff;given-names:M",
+                        "name_5": "surname:Murphy;given-names:K",
+                        "pub-id_doi": "10.1080/13607863.2016.1254596",
+                        "pub-id_pmid": "27869503",
+                        "section_type": "REF",
+                        "source": "Aging Ment Health",
+                        "type": "ref",
+                        "volume": "21",
+                        "year": "2017"
+                    },
+                    "text": "Social health and dementia: a European consensus on the operationalization of the concept and directions for research and practice",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 38185,
+                    "infons": {
+                        "citation-alternatives": "Leung P, Orrell M, Orgeta V. Social support group interventions in people with dementia and mild cognitive impairment: a systematic review of the literature. Int J Geriatr Psychiatry. 2015;30(1):1\u20139.\n",
+                        "fpage": "1",
+                        "issue": "1",
+                        "lpage": "9",
+                        "name_0": "surname:Leung;given-names:P",
+                        "name_1": "surname:Orrell;given-names:M",
+                        "name_2": "surname:Orgeta;given-names:V",
+                        "pub-id_doi": "10.1002/gps.4166",
+                        "pub-id_pmid": "24990344",
+                        "section_type": "REF",
+                        "source": "Int J Geriatr Psychiatry",
+                        "type": "ref",
+                        "volume": "30",
+                        "year": "2015"
+                    },
+                    "text": "Social support group interventions in people with dementia and mild cognitive impairment: a systematic review of the literature",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 38313,
+                    "infons": {
+                        "citation-alternatives": "Han A, Radel J, McDowd JM, Sabata D. The benefits of Individualized Leisure and Social Activity interventions for people with dementia: a systematic review. Act Adapt Aging. 2016;40(3):219\u201365.",
+                        "fpage": "219",
+                        "issue": "3",
+                        "lpage": "65",
+                        "name_0": "surname:Han;given-names:A",
+                        "name_1": "surname:Radel;given-names:J",
+                        "name_2": "surname:McDowd;given-names:JM",
+                        "name_3": "surname:Sabata;given-names:D",
+                        "section_type": "REF",
+                        "source": "Act Adapt Aging",
+                        "type": "ref",
+                        "volume": "40",
+                        "year": "2016"
+                    },
+                    "text": "The benefits of Individualized Leisure and Social Activity interventions for people with dementia: a systematic review",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 38432,
+                    "infons": {
+                        "section_type": "REF",
+                        "type": "ref"
+                    },
+                    "text": "Harwood, R. H., Goldberg, S. E., Brand, A., van Der Wardt, V., Booth, V., Di Lorito, C., & Masud, T. (2023). Promoting Activity, Independence, and Stability in Early Dementia and mild cognitive impairment (PrAISED): randomised controlled trial. bmj, 382.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 38687,
+                    "infons": {
+                        "section_type": "REF",
+                        "type": "ref"
+                    },
+                    "text": "Di Lorito C, Van der Wardt V, Pollock K, Howe L, Booth V, Logan P, et al. The facilitators and barriers to improving functional activity and wellbeing in people with dementia: a qualitative study from the process evaluation of Promoting Activity, Independence and Stability in Early Dementia (PrAISED). Age and Ageing. 2023; 52(8), afad166.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 39028,
+                    "infons": {
+                        "section_type": "REF",
+                        "type": "ref"
+                    },
+                    "text": "Tilley N. Realistic Evaluation: An Overview.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 39073,
+                    "infons": {
+                        "citation-alternatives": "Marchal B, Westhorp G, Wong G, Van Belle S, Greenhalgh T, Kegels G, et al. Realist RCTs of complex interventions \u2013 an oxymoron. Soc Sci Med. 2013;94:124\u20138.\n",
+                        "fpage": "124",
+                        "lpage": "8",
+                        "name_0": "surname:Marchal;given-names:B",
+                        "name_1": "surname:Westhorp;given-names:G",
+                        "name_2": "surname:Wong;given-names:G",
+                        "name_3": "surname:Van Belle;given-names:S",
+                        "name_4": "surname:Greenhalgh;given-names:T",
+                        "name_5": "surname:Kegels;given-names:G",
+                        "pub-id_doi": "10.1016/j.socscimed.2013.06.025",
+                        "pub-id_pmid": "23850482",
+                        "section_type": "REF",
+                        "source": "Soc Sci Med",
+                        "type": "ref",
+                        "volume": "94",
+                        "year": "2013"
+                    },
+                    "text": "Realist RCTs of complex interventions \u2013 an oxymoron",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 39127,
+                    "infons": {
+                        "section_type": "REF",
+                        "type": "ref"
+                    },
+                    "text": "Pawson R, Tilley N. An introduction to scientific Realist evaluation. Evaluation for the 21st Century: a handbook. SAGE; 1997. pp. 405\u201318.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 39268,
+                    "infons": {
+                        "citation-alternatives": "Wong G, Westhorp G, Manzano A, Greenhalgh J, Jagosh J, Greenhalgh T. RAMESES II reporting standards for realist evaluations. BMC Med. 2016;14(1):96.\n",
+                        "fpage": "96",
+                        "issue": "1",
+                        "name_0": "surname:Wong;given-names:G",
+                        "name_1": "surname:Westhorp;given-names:G",
+                        "name_2": "surname:Manzano;given-names:A",
+                        "name_3": "surname:Greenhalgh;given-names:J",
+                        "name_4": "surname:Jagosh;given-names:J",
+                        "name_5": "surname:Greenhalgh;given-names:T",
+                        "pub-id_doi": "10.1186/s12916-016-0643-1",
+                        "pub-id_pmid": "27342217",
+                        "section_type": "REF",
+                        "source": "BMC Med",
+                        "type": "ref",
+                        "volume": "14",
+                        "year": "2016"
+                    },
+                    "text": "RAMESES II reporting standards for realist evaluations",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 39323,
+                    "infons": {
+                        "citation-alternatives": "Pawson R, Tilley N. Realistic evaluation bloodlines. Am J Eval. 2001;22(3):317\u201324.",
+                        "fpage": "317",
+                        "issue": "3",
+                        "lpage": "24",
+                        "name_0": "surname:Pawson;given-names:R",
+                        "name_1": "surname:Tilley;given-names:N",
+                        "pub-id_doi": "10.1177/109821400102200305",
+                        "section_type": "REF",
+                        "source": "Am J Eval",
+                        "type": "ref",
+                        "volume": "22",
+                        "year": "2001"
+                    },
+                    "text": "Realistic evaluation bloodlines",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 39355,
+                    "infons": {
+                        "citation-alternatives": "Booth V, Harwood RH, Hood-Moore V, Bramley T, Hancox JE, Robertson K, et al. Promoting activity, independence and stability in early dementia and mild cognitive impairment (PrAISED): development of an intervention for people with mild cognitive impairment and dementia. Clin Rehabil. 2018;32(7):855\u201364.\n",
+                        "fpage": "855",
+                        "issue": "7",
+                        "lpage": "64",
+                        "name_0": "surname:Booth;given-names:V",
+                        "name_1": "surname:Harwood;given-names:RH",
+                        "name_2": "surname:Hood-Moore;given-names:V",
+                        "name_3": "surname:Bramley;given-names:T",
+                        "name_4": "surname:Hancox;given-names:JE",
+                        "name_5": "surname:Robertson;given-names:K",
+                        "pub-id_doi": "10.1177/0269215518758149",
+                        "pub-id_pmid": "29436253",
+                        "section_type": "REF",
+                        "source": "Clin Rehabil",
+                        "type": "ref",
+                        "volume": "32",
+                        "year": "2018"
+                    },
+                    "text": "Promoting activity, independence and stability in early dementia and mild cognitive impairment (PrAISED): development of an intervention for people with mild cognitive impairment and dementia",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 39547,
+                    "infons": {
+                        "citation-alternatives": "Cowley A, Booth V, Di Lorito C, Chandria P, Chadwick O, Stanislas C, et al. A qualitative study on the experiences of therapists delivering the promoting activity, Independence and Stability in Early Dementia (PrAISED) intervention during the COVID-19 pandemic. J Alzheimers Dis. 2023;91(1):203\u201314.\n",
+                        "fpage": "203",
+                        "issue": "1",
+                        "lpage": "14",
+                        "name_0": "surname:Cowley;given-names:A",
+                        "name_1": "surname:Booth;given-names:V",
+                        "name_2": "surname:Di Lorito;given-names:C",
+                        "name_3": "surname:Chandria;given-names:P",
+                        "name_4": "surname:Chadwick;given-names:O",
+                        "name_5": "surname:Stanislas;given-names:C",
+                        "pub-id_doi": "10.3233/JAD-220424",
+                        "pub-id_pmid": "36404541",
+                        "section_type": "REF",
+                        "source": "J Alzheimers Dis",
+                        "type": "ref",
+                        "volume": "91",
+                        "year": "2023"
+                    },
+                    "text": "A qualitative study on the experiences of therapists delivering the promoting activity, Independence and Stability in Early Dementia (PrAISED) intervention during the COVID-19 pandemic",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 39732,
+                    "infons": {
+                        "citation-alternatives": "Gilmore B, McAuliffe E, Power J, Valli\u00e8res F. Data Analysis and Synthesis within a Realist evaluation: toward more transparent methodological approaches. Int J Qual Methods. 2019;18:160940691985975.",
+                        "fpage": "160940691985975",
+                        "name_0": "surname:Gilmore;given-names:B",
+                        "name_1": "surname:McAuliffe;given-names:E",
+                        "name_2": "surname:Power;given-names:J",
+                        "name_3": "surname:Valli\u00e8res;given-names:F",
+                        "pub-id_doi": "10.1177/1609406919859754",
+                        "section_type": "REF",
+                        "source": "Int J Qual Methods",
+                        "type": "ref",
+                        "volume": "18",
+                        "year": "2019"
+                    },
+                    "text": "Data Analysis and Synthesis within a Realist evaluation: toward more transparent methodological approaches",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 39839,
+                    "infons": {
+                        "citation-alternatives": "Pinkert C, K\u00f6hler K, von Kutzleben M, Hochgr\u00e4ber I, Cavazzini C, V\u00f6lz S, et al. Social inclusion of people with dementia \u2013 an integrative review of theoretical frameworks, methods and findings in empirical studies. Ageing Soc. 2021;41(4):773\u201393.",
+                        "fpage": "773",
+                        "issue": "4",
+                        "lpage": "93",
+                        "name_0": "surname:Pinkert;given-names:C",
+                        "name_1": "surname:K\u00f6hler;given-names:K",
+                        "name_2": "surname:von Kutzleben;given-names:M",
+                        "name_3": "surname:Hochgr\u00e4ber;given-names:I",
+                        "name_4": "surname:Cavazzini;given-names:C",
+                        "name_5": "surname:V\u00f6lz;given-names:S",
+                        "pub-id_doi": "10.1017/S0144686X19001338",
+                        "section_type": "REF",
+                        "source": "Ageing Soc",
+                        "type": "ref",
+                        "volume": "41",
+                        "year": "2021"
+                    },
+                    "text": "Social inclusion of people with dementia \u2013 an integrative review of theoretical frameworks, methods and findings in empirical studies",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 39975,
+                    "infons": {
+                        "citation-alternatives": "Braun V, Clarke V. Using thematic analysis in psychology. Qual Res Psychol. 2006;3(2):77\u2013101.",
+                        "fpage": "77",
+                        "issue": "2",
+                        "lpage": "101",
+                        "name_0": "surname:Braun;given-names:V",
+                        "name_1": "surname:Clarke;given-names:V",
+                        "pub-id_doi": "10.1191/1478088706qp063oa",
+                        "section_type": "REF",
+                        "source": "Qual Res Psychol",
+                        "type": "ref",
+                        "volume": "3",
+                        "year": "2006"
+                    },
+                    "text": "Using thematic analysis in psychology",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 40013,
+                    "infons": {
+                        "citation-alternatives": "O\u2019Cathain A, Murphy E, Nicholl J. Three techniques for integrating data in mixed methods studies. BMJ. 2010;341:c4587.\n",
+                        "fpage": "c4587",
+                        "name_0": "surname:O\u2019Cathain;given-names:A",
+                        "name_1": "surname:Murphy;given-names:E",
+                        "name_2": "surname:Nicholl;given-names:J",
+                        "pub-id_doi": "10.1136/bmj.c4587",
+                        "pub-id_pmid": "20851841",
+                        "section_type": "REF",
+                        "source": "BMJ",
+                        "type": "ref",
+                        "volume": "341",
+                        "year": "2010"
+                    },
+                    "text": "Three techniques for integrating data in mixed methods studies",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 40076,
+                    "infons": {
+                        "citation-alternatives": "Di Lorito C, Duff C, Rogers C, Tuxworth J, Bell J, Fothergill R, et al. Tele-Rehabilitation for people with dementia during the COVID-19 pandemic: a case-study from England. Int J Environ Res Public Health. 2021;18(4):1717.\n",
+                        "fpage": "1717",
+                        "issue": "4",
+                        "name_0": "surname:Di Lorito;given-names:C",
+                        "name_1": "surname:Duff;given-names:C",
+                        "name_2": "surname:Rogers;given-names:C",
+                        "name_3": "surname:Tuxworth;given-names:J",
+                        "name_4": "surname:Bell;given-names:J",
+                        "name_5": "surname:Fothergill;given-names:R",
+                        "pub-id_doi": "10.3390/ijerph18041717",
+                        "pub-id_pmid": "33578949",
+                        "section_type": "REF",
+                        "source": "Int J Environ Res Public Health",
+                        "type": "ref",
+                        "volume": "18",
+                        "year": "2021"
+                    },
+                    "text": "Tele-Rehabilitation for people with dementia during the COVID-19 pandemic: a case-study from England",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 40177,
+                    "infons": {
+                        "section_type": "REF",
+                        "type": "ref"
+                    },
+                    "text": "Norvoll R, \u00d8ye C, Skatvedt AH. Like a Social Breath: Homecare\u2019s Contributions to Social Inclusion and Connectedness of Older Adults. 2022.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 40319,
+                    "infons": {
+                        "section_type": "REF",
+                        "type": "ref"
+                    },
+                    "text": "NICE. Recommendations | Home care: delivering personal care and practical support to older people living in their own homes | Guidance | NICE [Internet]. NICE. 2015 [cited 2023 Mar 20]. https://www.nice.org.uk/guidance/ng21/chapter/Recommendations#delivering-home-care.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 40589,
+                    "infons": {
+                        "citation-alternatives": "Entwistle VA, Watt IS. Treating patients as persons: a capabilities Approach to support delivery of person-centered care. Am J Bioeth. 2013;13(8):29\u201339.\n",
+                        "fpage": "29",
+                        "issue": "8",
+                        "lpage": "39",
+                        "name_0": "surname:Entwistle;given-names:VA",
+                        "name_1": "surname:Watt;given-names:IS",
+                        "pub-id_doi": "10.1080/15265161.2013.802060",
+                        "pub-id_pmid": "23862598",
+                        "section_type": "REF",
+                        "source": "Am J Bioeth",
+                        "type": "ref",
+                        "volume": "13",
+                        "year": "2013"
+                    },
+                    "text": "Treating patients as persons: a capabilities Approach to support delivery of person-centered care",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 40687,
+                    "infons": {
+                        "section_type": "REF",
+                        "type": "ref"
+                    },
+                    "text": "Gilmour H. Social participation and the health and well-being of Canadian seniors.",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 40770,
+                    "infons": {
+                        "citation-alternatives": "Dawson-Townsend K. Social participation patterns and their associations with health and well-being for older adults. SSM - Popul Health. 2019;8:100424.\n",
+                        "fpage": "100424",
+                        "name_0": "surname:Dawson-Townsend;given-names:K",
+                        "pub-id_doi": "10.1016/j.ssmph.2019.100424",
+                        "pub-id_pmid": "31312713",
+                        "section_type": "REF",
+                        "source": "SSM - Popul Health",
+                        "type": "ref",
+                        "volume": "8",
+                        "year": "2019"
+                    },
+                    "text": "Social participation patterns and their associations with health and well-being for older adults",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 40867,
+                    "infons": {
+                        "citation-alternatives": "Heins P, Boots L, Koh WQ, Neven A, Verhey F, de Vugt M. Technological interventions and Social Participation in Community-Dwelling older adults with or without dementia. Innov Aging. 2021;5(Suppl 1):587\u20138.",
+                        "fpage": "587",
+                        "issue": "Suppl 1",
+                        "lpage": "8",
+                        "name_0": "surname:Heins;given-names:P",
+                        "name_1": "surname:Boots;given-names:L",
+                        "name_2": "surname:Koh;given-names:WQ",
+                        "name_3": "surname:Neven;given-names:A",
+                        "name_4": "surname:Verhey;given-names:F",
+                        "name_5": "surname:de Vugt;given-names:M",
+                        "pub-id_doi": "10.1093/geroni/igab046.2255",
+                        "section_type": "REF",
+                        "source": "Innov Aging",
+                        "type": "ref",
+                        "volume": "5",
+                        "year": "2021"
+                    },
+                    "text": "Technological interventions and Social Participation in Community-Dwelling older adults with or without dementia",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 40980,
+                    "infons": {
+                        "citation-alternatives": "Reilly ST, Harding AJE, Morbey H, Ahmed F, Williamson PR, Swarbrick C, et al. What is important to people with dementia living at home? A set of core outcome items for use in the evaluation of non-pharmacological community-based health and social care interventions. Age Ageing. 2020;49(4):664\u201371.",
+                        "fpage": "664",
+                        "issue": "4",
+                        "lpage": "71",
+                        "name_0": "surname:Reilly;given-names:ST",
+                        "name_1": "surname:Harding;given-names:AJE",
+                        "name_2": "surname:Morbey;given-names:H",
+                        "name_3": "surname:Ahmed;given-names:F",
+                        "name_4": "surname:Williamson;given-names:PR",
+                        "name_5": "surname:Swarbrick;given-names:C",
+                        "pub-id_doi": "10.1093/ageing/afaa015",
+                        "section_type": "REF",
+                        "source": "Age Ageing",
+                        "type": "ref",
+                        "volume": "49",
+                        "year": "2020"
+                    },
+                    "text": "What is important to people with dementia living at home? A set of core outcome items for use in the evaluation of non-pharmacological community-based health and social care interventions",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 41168,
+                    "infons": {
+                        "citation-alternatives": "Mangiaracina F, Meiland F, Kerkhof Y, Orrell M, Graff M, Dr\u00f6es RM. Self-management and social participation in community-dwelling people with mild dementia: a review of measuring instruments. Int Psychogeriatr. 2019;31(9):1267\u201385.\n",
+                        "fpage": "1267",
+                        "issue": "9",
+                        "lpage": "85",
+                        "name_0": "surname:Mangiaracina;given-names:F",
+                        "name_1": "surname:Meiland;given-names:F",
+                        "name_2": "surname:Kerkhof;given-names:Y",
+                        "name_3": "surname:Orrell;given-names:M",
+                        "name_4": "surname:Graff;given-names:M",
+                        "name_5": "surname:Dr\u00f6es;given-names:RM",
+                        "pub-id_doi": "10.1017/S1041610218001709",
+                        "pub-id_pmid": "30724149",
+                        "section_type": "REF",
+                        "source": "Int Psychogeriatr",
+                        "type": "ref",
+                        "volume": "31",
+                        "year": "2019"
+                    },
+                    "text": "Self-management and social participation in community-dwelling people with mild dementia: a review of measuring instruments",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 41292,
+                    "infons": {
+                        "citation-alternatives": "Babatunde F, MacDermid J, MacIntyre N. Characteristics of therapeutic alliance in musculoskeletal physiotherapy and occupational therapy practice: a scoping review of the literature. BMC Health Serv Res. 2017;17(1):375.\n",
+                        "fpage": "375",
+                        "issue": "1",
+                        "name_0": "surname:Babatunde;given-names:F",
+                        "name_1": "surname:MacDermid;given-names:J",
+                        "name_2": "surname:MacIntyre;given-names:N",
+                        "pub-id_doi": "10.1186/s12913-017-2311-3",
+                        "pub-id_pmid": "28558746",
+                        "section_type": "REF",
+                        "source": "BMC Health Serv Res",
+                        "type": "ref",
+                        "volume": "17",
+                        "year": "2017"
+                    },
+                    "text": "Characteristics of therapeutic alliance in musculoskeletal physiotherapy and occupational therapy practice: a scoping review of the literature",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 41435,
+                    "infons": {
+                        "citation-alternatives": "Cole MB, McLean V. Therapeutic relationships re-defined. Occup Ther Ment Health. 2003;19(2):33\u201356.",
+                        "fpage": "33",
+                        "issue": "2",
+                        "lpage": "56",
+                        "name_0": "surname:Cole;given-names:MB",
+                        "name_1": "surname:McLean;given-names:V",
+                        "pub-id_doi": "10.1300/J004v19n02_03",
+                        "section_type": "REF",
+                        "source": "Occup Ther Ment Health",
+                        "type": "ref",
+                        "volume": "19",
+                        "year": "2003"
+                    },
+                    "text": "Therapeutic relationships re-defined",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 41472,
+                    "infons": {
+                        "citation-alternatives": "Booth V, Harwood R, Hood V, Masud T, Logan P. Understanding the theoretical underpinning of the exercise component in a fall prevention programme for older adults with mild dementia: a realist review protocol. Syst Rev. 2016;5(1):119.\n",
+                        "fpage": "119",
+                        "issue": "1",
+                        "name_0": "surname:Booth;given-names:V",
+                        "name_1": "surname:Harwood;given-names:R",
+                        "name_2": "surname:Hood;given-names:V",
+                        "name_3": "surname:Masud;given-names:T",
+                        "name_4": "surname:Logan;given-names:P",
+                        "pub-id_doi": "10.1186/s13643-016-0212-x",
+                        "pub-id_pmid": "27435818",
+                        "section_type": "REF",
+                        "source": "Syst Rev",
+                        "type": "ref",
+                        "volume": "5",
+                        "year": "2016"
+                    },
+                    "text": "Understanding the theoretical underpinning of the exercise component in a fall prevention programme for older adults with mild dementia: a realist review protocol",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 41635,
+                    "infons": {
+                        "citation-alternatives": "Di Lorito C, Pollock K, Harwood R, das Nair R, Logan P, Goldberg S, et al. A scoping review of behaviour change theories in adults without dementia to adapt and develop the \u2018PHYT in dementia\u2019, a model promoting physical activity in people with dementia. Maturitas. 2019;121:101\u201313.\n",
+                        "fpage": "101",
+                        "lpage": "13",
+                        "name_0": "surname:Di Lorito;given-names:C",
+                        "name_1": "surname:Pollock;given-names:K",
+                        "name_2": "surname:Harwood;given-names:R",
+                        "name_3": "surname:das Nair;given-names:R",
+                        "name_4": "surname:Logan;given-names:P",
+                        "name_5": "surname:Goldberg;given-names:S",
+                        "pub-id_doi": "10.1016/j.maturitas.2019.01.008",
+                        "pub-id_pmid": "30686623",
+                        "section_type": "REF",
+                        "source": "Maturitas",
+                        "type": "ref",
+                        "volume": "121",
+                        "year": "2019"
+                    },
+                    "text": "A scoping review of behaviour change theories in adults without dementia to adapt and develop the \u2018PHYT in dementia\u2019, a model promoting physical activity in people with dementia",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                },
+                {
+                    "bioctype": "BioCPassage",
+                    "offset": 41817,
+                    "infons": {
+                        "citation-alternatives": "Manzano A. The craft of interviewing in realist evaluation. Evaluation. 2016;22(3):342\u201360.",
+                        "fpage": "342",
+                        "issue": "3",
+                        "lpage": "60",
+                        "name_0": "surname:Manzano;given-names:A",
+                        "pub-id_doi": "10.1177/1356389016638615",
+                        "section_type": "REF",
+                        "source": "Evaluation",
+                        "type": "ref",
+                        "volume": "22",
+                        "year": "2016"
+                    },
+                    "text": "The craft of interviewing in realist evaluation",
+                    "sentences": [],
+                    "annotations": [],
+                    "relations": []
+                }
+            ],
+            "annotations": [],
+            "relations": []
+        }
+    ]
+}

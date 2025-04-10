@@ -33,7 +33,7 @@ def train_t5_on_gpu(
     model,
     dataset,
     collate_fn,
-    batch_size=8,
+    batch_size=1,
     optimizer=None,
     num_epochs=7,
     accumulation_steps=1,
@@ -67,7 +67,7 @@ def train_t5_on_gpu(
     if optimizer is None:
         optimizer = Adafactor(
             model.parameters(),
-            lr=1e-3,
+            lr=1e-5,
             scale_parameter=False,
             relative_step=False,
             warmup_init=False
@@ -126,7 +126,7 @@ def train_t5_on_gpu(
                 
                 # Zero gradients after updating weights
                 optimizer.zero_grad()
-            
+                torch.cuda.empty_cache()
             # Track loss for reporting
             total_loss += loss.item() * accumulation_steps
             
@@ -179,7 +179,7 @@ def train_t5_unsupervised(
     model,
     dataset,
     collate_fn,
-    batch_size=8,
+    batch_size=1,
     num_gpus=2,
     optimizer=None,
     num_epochs=10,
@@ -219,7 +219,7 @@ class CollatorWrapper:
 if __name__ == '__main__':
     import os
     os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # Suppress TensorFlow logging
-    model_variants = ["google-t5/t5-base", "google-t5/t5-3b", "google/flan-t5-large", "google-t5/t5-11b"]
+    model_variants = ["google-t5/t5-base", "google-t5/t5-3b", "google/flan-t5-large", "google-t5/t5-11b", "google/flan-t5-xxl"]
     device = 'cuda:0'
 
     model = T5ForConditionalGeneration.from_pretrained(
@@ -239,8 +239,9 @@ if __name__ == '__main__':
 
 
     dataset = T5Dataset(text, tokenizer)
-    dataloader = DataLoader(dataset, batch_size=2, shuffle=True, collate_fn=lambda batch: collator(batch, tokenizer))
+    dataloader = DataLoader(dataset, batch_size=1, shuffle=True, collate_fn=lambda batch: collator(batch, tokenizer))
 
+    torch.cuda.empty_cache()
     my_collator = CollatorWrapper(tokenizer)
     train_t5_unsupervised(model, dataset, my_collator)
     # train_t5_unsupervised(model, dataset, lambda batch: collator(batch, tokenizer))

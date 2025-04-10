@@ -4,3 +4,5 @@ articles
 .vscode/
 venv
 previous_attempts/full_texts.json
+t5_training/*.pt
+data
