@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNLV ADBMO Classifier</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <style>
+        :root {
+            --unlv-scarlet: #B0001D; /* Darker version of UNLV red */
+            --unlv-scarlet-hover: #8B0017; /* Even darker for hover states */
+            --unlv-gray: #666666;
+            --unlv-black: #222222;
+            --primary-color: #6366f1;
+            --primary-light: #818cf8;
+            --primary-dark: #4f46e5;
+            --success-color: #10b981;
+            --background: #f8fafc;
+            --surface: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            margin: 0;
+            background-color: var(--background);
+            color: var(--text-primary);
+            line-height: 1.5;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: var(--unlv-scarlet);
+            color: white;
+            padding: 1rem 2rem;
+            box-shadow: var(--shadow-md);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo::before {
+            content: '🎓';
+            font-size: 1.8rem;
+        }
+
+        .nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            background-color: white;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .nav-link:hover::after {
+            width: 80%;
+        }
+
+        .sign-in {
+            background-color: white;
+            color: var(--unlv-scarlet);
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .sign-in:hover {
+            background-color: var(--background);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Main Content Styles */
+        main {
+            flex: 1;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .page-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--unlv-scarlet);
+            margin-bottom: 2rem;
+            text-align: center;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .page-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background-color: var(--unlv-scarlet);
+            border-radius: 2px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 550px), 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: var(--surface);
+            border-radius: 1rem;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-2px);
+        }
+
+        .card-header {
+            padding: 1.5rem;
+            background: var(--unlv-scarlet);
+            color: white;
+        }
+
+        .card-header h2 {
+            color: white;
+            margin: 0;
+            font-size: 1.25rem;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        /* Dropzone Styles */
+        .drop-zone {
+            border: 2px dashed var(--unlv-scarlet);
+            border-radius: 0.75rem;
+            padding: 2rem;
+            text-align: center;
+            background: var(--surface);
+            min-height: 200px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .drop-zone:before {
+            content: '📄';
+            font-size: 2rem;
+        }
+
+        .drop-zone:hover {
+            border-color: var(--unlv-scarlet-hover);
+            background: #f8fafc;
+        }
+
+        .drop-zone.dragover {
+            border-color: var(--unlv-scarlet-hover);
+            background: #fff5f5;
+            transform: scale(1.02);
+        }
+
+        .article-item {
+            background: #f8fafc;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0.5rem;
+            border-left: 4px solid var(--unlv-scarlet);
+            box-shadow: var(--shadow-sm);
+            transition: transform 0.2s ease;
+        }
+
+        .article-item:hover {
+            transform: translateX(4px);
+        }
+
+        .classification {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: #fff5f5;
+            border-radius: 0.5rem;
+            border: 1px solid var(--unlv-scarlet);
+        }
+
+        .classification p {
+            margin: 0.5rem 0;
+        }
+
+        .confidence-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: var(--unlv-scarlet);
+            color: white;
+            border-radius: 1rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .loading::after {
+            content: '';
+            display: inline-block;
+            width: 2rem;
+            height: 2rem;
+            border: 3px solid #f8fafc;
+            border-top: 3px solid var(--unlv-scarlet);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: var(--unlv-black);
+            color: white;
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+        }
+
+        .footer-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .footer-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .footer-link {
+            color: #a0aec0;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: white;
+            transform: translateX(5px);
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #a0aec0;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-link {
+            color: white;
+            text-decoration: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background-color: var(--unlv-scarlet);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #a0aec0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem 0;
+            }
+
+            .nav {
+                gap: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .page-title {
+                font-size: 2rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+
+            .contact-info {
+                justify-content: center;
+            }
+
+            main {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="#" class="logo">UNLV ADBMO Classifier</a>
+            <nav class="nav">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Review</a>
+                <a href="#" class="nav-link sign-in">Sign In</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="page-title">Article Classification</h1>
+        
+        <div class="grid">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Input Articles</h2>
+                </div>
+                <div class="card-body">
+                    <div id="dropZone" class="drop-zone">
+                        Drop your article titles here or click to paste
+                        <div id="articlesList"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h2>Classification Results</h2>
+                </div>
+                <div class="card-body">
+                    <div class="results">
+                        <div id="loading" class="loading"></div>
+                        <div id="classificationResults"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">About ADBMO</h3>
+                <p>Alzheimer's Disease BioMarkers @ UNLV specializes in cutting-edge research in Alzheimer's.</p>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Quick Links</h3>
+                <a href="#" class="footer-link">Documentation</a>
+                <a href="#" class="footer-link">Research Papers</a>
+                <a href="#" class="footer-link">API Access</a>
+                <a href="#" class="footer-link">Support</a>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Contact Us</h3>
+                <div class="contact-info">📍 University of Nevada, Las Vegas</div>
+                <div class="contact-info">📧 adbmo@unlv.edu</div>
+                <div class="contact-info">📱 (702) 895-3011</div>
+                <div class="social-links">
+                    <a href="#" class="social-link">📘</a>
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">📸</a>
+                    <a href="#" class="social-link">💼</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2024 UNLV ADBMO Lab. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        const dropZone = document.getElementById('dropZone');
+        const articlesList = document.getElementById('articlesList');
+        const loading = document.getElementById('loading');
+        const classificationResults = document.getElementById('classificationResults');
+
+        const mockLLMClassification = (title)
