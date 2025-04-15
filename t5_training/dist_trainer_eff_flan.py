@@ -18,7 +18,7 @@ from functools import partial
 from functools import partial
 from transformers.models.t5.modeling_t5 import T5Block
 from torch.utils.data import DataLoader, DistributedSampler
-from transformers import T5ForConditionalGeneration, AdamW, T5Tokenizer
+from transformers import T5ForConditionalGeneration, AdamW, T5Tokenizer, BitsAndBytesConfig
 from transformers.optimization import Adafactor, get_scheduler
 from transformers.models.t5.modeling_t5 import T5Block
 from dataset_utils import T5Dataset, collator
@@ -206,7 +206,7 @@ def train_t5_with_deepspeed_fsdp(
         
         # Create optimizer
         optimizer = Adafactor(
-            model.parameters(),
+            filter(lambda p: p.requires_grad, model.parameters()),
             lr=5e-4,
             scale_parameter=False,
             relative_step=False,
@@ -219,6 +219,13 @@ def train_t5_with_deepspeed_fsdp(
             num_warmup_steps=10000,
             num_training_steps=total_steps
         )
+
+        # lr_scheduler = get_scheduler(
+        #     "linear",
+        #     optimizer=optimizer,
+        #     num_warmup_steps=10000,
+        #     num_training_steps=total_steps
+        # )
     else:
         # Move model to the correct device
         model = model.to(device)
@@ -228,8 +235,9 @@ def train_t5_with_deepspeed_fsdp(
         model = DDP(model, device_ids=[rank], output_device=rank)
         
         # Create optimizer
+        # Create optimizer
         optimizer = Adafactor(
-            model.parameters(),
+            filter(lambda p: p.requires_grad, model.parameters()),
             lr=5e-4,
             scale_parameter=False,
             relative_step=False,
@@ -243,6 +251,13 @@ def train_t5_with_deepspeed_fsdp(
             num_warmup_steps=10000,
             num_training_steps=total_steps
         )
+
+        # lr_scheduler = get_scheduler(
+        #     "linear",
+        #     optimizer=optimizer,
+        #     num_warmup_steps=10000,
+        #     num_training_steps=total_steps
+        # )
     
     # Store best model state
     best_loss = float('inf')
@@ -512,6 +527,8 @@ if __name__ == '__main__':
         torch_dtype=torch.float16,
         token=os.getenv('HF_ACCESS_TOKEN')
     )
+    for param in model.get_decoder().parameters():
+        param.requires_grad = False
     
     # Initialize tokenizer
     tokenizer = T5Tokenizer.from_pretrained(args.model_name)
@@ -539,6 +556,7 @@ if __name__ == '__main__':
             section_annotations = []
             for ann_group in content.get("annotation", []):
                 for ann_id, ann in ann_group.items():
+                 
                     try:
                         start = int(ann["offset"])
                         end = start + int(ann["length"])
