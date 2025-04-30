@@ -1,0 +1,35 @@
+{
+    "name": "instruction_output_schema",
+    "strict": true,
+    "schema": {
+      "type": "object",
+      "required": [
+        "samples"
+      ],
+      "properties": {    
+        "samples": {
+           "type": "array", 
+           "items": {
+                "type": "object",
+                "required" : [
+                    "input",
+                    "output"
+                ],
+                "properties": {
+                    "input": {
+                        "type": "string",
+                        "description": "The instruction and context provided as input. Make sure this property contains text that is above 600 tokens long"
+                    },
+                    "output" : {
+                        "type": "string",
+                        "description": "The label corresponding to the input, which also includes a justification."
+                    }
+                },
+                "additionalProperties": false
+            },
+            "description": "A list of input texts with their corresponding outputs."
+        }
+      },
+      "additionalProperties": false
+    }
+  }

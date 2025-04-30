@@ -1,0 +1,705 @@
+{
+        "samples": [
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The paper outlines a framework for understanding neural processing and reviews key studies on cognitive performance, drawing comparisons across various experimental paradigms. Although it introduces a novel theoretical perspective, it does not present new data or experimental results.",
+                "output": "No. The text indicates that the paper is a review and theoretical discussion rather than presenting new experimental data, characteristic of original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: In this experiment, we collected sediment samples from different coastal regions to analyze the impact of pollution on marine ecosystems. The methods section details the sampling process, chemical analysis techniques, and the statistical models applied to interpret the data collected for this study.",
+                "output": "Yes. The text describes the collection of new sediment samples and the use of specific analytical and statistical methods, highlighting that this is an original research article."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This review explores the efficacy of mindfulness-based stress reduction by aggregating results from multiple clinical trials. The authors provide a meta-analysis of data from the previous decade to discuss general trends and outcomes across different populations.",
+                "output": "No. The text specifies that the paper is a review with a meta-analysis, which combines existing data rather than presenting new findings from original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: We conducted a cross-sectional study surveying over 1,000 adolescents to assess their dietary habits and physical activity levels. The findings were analyzed using logistic regression to identify significant lifestyle factors associated with obesity.",
+                "output": "Yes. The text indicates a cross-sectional study was conducted, data was gathered from participants, and statistical analyses were performed, typical of original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This paper offers a novel interpretation of classical philosophical theories in logic. Although it presents a unique perspective on existing standards, it primarily synthesizes previous scholarly work to bolster its arguments, without introducing new empirical research.",
+                "output": "No. The description suggests the paper focuses on philosophical interpretation and synthesis of existing work, not empirical research or new data collection."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: A randomized control trial was performed to measure the safety and efficacy of a new vaccine. Participants were tracked over a 12-month period, and results from blood tests and health questionnaires were analyzed to determine immune response outcomes.",
+                "output": "Yes. The paper mentions a randomized control trial with participant tracking and analysis of new data, indicating original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This editorial discusses the recent trends in renewable energy technologies, providing an opinion on future developments based on current industry reports and scientific discussions. No new experimental data is presented or analyzed.",
+                "output": "No. The text describes an editorial that discusses trends and presents opinions but lacks any mention of original research or data collection."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The study investigates the role of gene XYZ in cell division by using CRISPR-Cas9 to create specific knockouts in a laboratory setting. We provide detailed methodology on our experimental approach and data analysis from the generated cell lines.",
+                "output": "Yes. The text describes an experiment involving genetic manipulation and original data analysis, typical of an original research article."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: We conducted a longitudinal study exploring how early childhood education impacts cognitive development. Over five years, data was collected through standardized testing and parent interviews, yielding significant insights into learners’ progress.",
+                "output": "Yes. The article describes longitudinal data collection and analysis over several years, indicative of original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This perspective paper examines the implications of artificial intelligence in healthcare, providing a critical overview based on recent publications. It aims to shape policy discussions but does not include primary research or new datasets.",
+                "output": "No. The text identifies the paper as a perspective piece, focusing on critical overview rather than new data or original research findings."
+            }
+        ]
+    }', '{
+        "samples": [
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The authors conducted a cross-sectional survey involving 500 university students to assess their dietary habits and mental health status. Statistical methods such as regression analysis were employed to determine the relationship between diet and psychological well-being, with the results pointing to significant findings discussed in detail.",
+                "output": "Yes. This text describes the collection of new data through a survey and analysis using statistical methods, indicating original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This paper reviews the evolution of dietary guidelines over the past 20 years, highlighting major shifts in recommendations based on nutritional science. By compiling evidence from a wide array of studies, the article provides a comprehensive overview without presenting new experimental results or data analyses.",
+                "output": "No. The text describes the paper as a review of existing studies, which indicates it is not an original research article."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Researchers explored the genetic basis of type 2 diabetes by sequencing the DNA of 1,000 individuals from diverse populations. New variants were identified and statistical models were used to estimate their potential impact on disease prevalence, providing novel insights into genetic susceptibility.",
+                "output": "Yes. The text indicates that new genetic data were collected and analyzed, characteristic of original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This article summarizes a symposium focused on innovative treatment options for cardiovascular disease, capturing key points from presentations given by various experts. While it discusses current research trends, it provides no new experimental data or findings.",
+                "output": "No. The text is a summary of presentations, not detailing any new research or data collection."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: In this experiment, the effect of a temperature-controlled environment on seed germination was tested using controlled greenhouse conditions. Data collected over three months showed a significant increase in germination rates, with detailed methodologies and statistical analyses provided in the paper.",
+                "output": "Yes. The paper details an experiment setup, data collection, and analysis, indicating it reports original research findings."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The discussion presents a perspective on the future of renewable energy technologies, analyzing potential developments and impacts on global energy policies. The authors synthesize current reports but develop no new data within this work.",
+                "output": "No. It is identified as a perspective piece, which usually does not involve presenting new research data or findings."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The study investigates the antimicrobial properties of a newly discovered fungus species. The authors describe laboratory experiments conducted with various bacterial strains, showcasing novel data on fungus-bacterial interactions and proposing potential applications in medicine.",
+                "output": "Yes. The text clearly describes laboratory experimentation and presentation of new data, typical of original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This editorial addresses the fluctuating funding trends in ecological research, highlighting its implications on academic careers. It calls for policy changes without including any new research findings or data collection processes.",
+                "output": "No. Editorials are typically opinion pieces and do not present new research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Data from 15,000 smartphone users were analyzed to uncover patterns in daily activity levels and their correlation with health outcomes. The study employs machine learning models for data interpretation, setting the foundation for future work in digital health monitoring.",
+                "output": "Yes. The description indicates new data analysis with research methodologies, characteristic of original studies."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: By examining historical records and interdisciplinary literature, this article reconstructs the environmental changes across the Sahara over the past millennia. It interprets these findings within the broader context of climate history but does not introduce new experimental data.",
+                "output": "No. The paper reconstructs historical data from existing sources rather than presenting new investigative findings."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Through a randomized controlled trial involving 300 participants, this study evaluates the efficacy of an innovative cognitive-behavioral therapy app designed to reduce anxiety symptoms. Detailed protocols and statistical tests affirm the novelty of the research findings.",
+                "output": "Yes. New experimental design and statistical analysis are detailed, typical for an original research article."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Highlighting recent experimental breakthroughs, this newsletter from the Biophysical Society features short summaries of member research and upcoming conferences in neuroscience. It is informative but does not contain original experimental findings.",
+                "output": "No. Newsletters summarize existing research and announcements, not original research data."
+            },
+            {
+                "input":"Instruction: Is the paper an original research article?\\n\\nText: Using national health databases, the researchers conducted a cross-sectional analysis to determine the prevalence of vitamin D deficiency across age groups in three Nordic countries. The study\'s novel insights and recommendations are backed by statistically significant findings.",
+                "output": "Yes. The article describes cross-sectional data collection and original analysis, indicative of new research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This perspective piece evaluates advancements in brain-computer interface technology over the past decade, offering insights into potential ethical issues and future directions based on existing literature.",
+                "output": "No. Being a perspective paper focusing on an overview of existing literature signifies it is not original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: An extensive survey of the genetics of lactose intolerance was conducted using advanced sequencing methods to pinpoint genetic variations. Original data derived from over 2,000 diverse individuals contribute to a better understanding of this common condition.",
+                "output": "Yes. The description of sequencing methods and original data collection indicates it is an original research article."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This opinion piece reflects on the socio-economic impacts of climate change, arguing the necessity for a shift in public policy. While it brings forth compelling arguments, it is based on existing data and does not include new empirical research.",
+                "output": "No. Opinion pieces do not present new research data and focus on discussions based on existing information."
+            },
+            {
+                "input":"Instruction: Is the paper an original research article?\\n\\nText: The study employs a novel algorithm to simulate traffic flow in urban environments under various conditions. The algorithm\'s effectiveness is tested through rigorous experiments, introducing new findings on urban planning and transportation efficiency.",
+                "output": "Yes. The mention of a novel algorithm and experimental testing points to original research work."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Researchers assembled a meta-analysis of 150 studies on the psychological impacts of social media, providing a synthesized view of current trends. The collated data offer insights but do not constitute new, primary data collection or analysis.",
+                "output": "No. Meta-analysis involves synthesizing existing studies, indicating it does not contain new original research."
+            },
+            {
+                "input":"Instruction: Is the paper an original research article?\\n\\nText: Through a double-blind clinical trial, new skin krem\'s effects on reducing acne symptoms were tested on a sample of 200 volunteers. Statistical analyses confirm the cream\'s efficacy, contributing valuable data to dermatological research.",
+                "output": "Yes. The description of a clinical trial and resulting new data signifies that this is an original research article."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This lecture series document captures expert talks from the June 2023 biotechnology symposium, summarizing cutting-edge research and technological innovations. While educational, it reviews existing content without producing new data.",
+                "output": "No. It describes a compilation of lectures, which does not involve presenting new research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: In investigating the causative mechanisms of Alzheimer’s, the study applies new imaging techniques to observe neural activity in patients. The results offer unprecedented insights into brain function during disease progression, supported by detailed evidence and analysis.",
+                "output": "Yes. The application of new techniques and detailed analysis of neural activity indicate original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This article is a letter to the editor highlighting the misconceptions about the role of artificial intelligence in diagnosing cancer. It debates the ethical considerations and theoretical implications without including empirical data research.",
+                "output": "No. Being a letter to the editor indicates it is an opinion or discussion piece, not original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Utilizing bird migration data collected over 20 years, our analysis identifies shifts in patterns due to climate change. These findings were achieved through extensive data processing and innovative statistical techniques, demonstrating novel impacts on species distributions.",
+                "output": "Yes. The mention of long-term data analysis and presenting new findings indicates original research work."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This paper is a synthesis of early childhood education strategies, evaluating outcomes based on previous works over the last decade. It aims to guide policy development but introduces no new empirical data or experimental work.",
+                "output": "No. It describes synthesis from existing studies, showing it is not original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The authors implemented a new machine learning framework for prediction of crop yields in response to climate variables. The study involved processing new satellite imagery data, resulting in actionable insights for agricultural planning.",
+                "output": "Yes. The introduction of a new framework and the processing of new data indicate original research contributions."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This commentary explores the implications of recent findings in quantum computing on future technology paradigms. It provides critical insights and discussions based on recent studies but does not offer new experimental research data.",
+                "output": "No. Commentaries typically provide discussion and critique, not new research findings."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: We conducted an intervention study on the impacts of daily mindfulness practices among middle school educators. Data collected from control and intervention groups demonstrated significant improvements in teacher well-being and classroom productivity.",
+                "output": "Yes. The detailed description of an intervention study and analysis supports that this is original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: By summarizing and analyzing recent patents in biotechnology, this article provides insights into innovative applications of genetic engineering. It serves as a state-of-the-art account but does not involve conducting new research or experiments.",
+                "output": "No. The description aligns with a review of patents, offering no new research data."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The research evaluates the antibacterial effectiveness of silver nanoparticles synthesized from tea extracts against several microbes. Laboratory tests yielded significant data, advancing the application of nanotechnology in medicine.",
+                "output": "Yes. The text describes laboratory testing and new data, key elements of an original research article."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This policy report analyzes international approaches to cyber security over the past five years, proposing integrative solutions based on aggregated data. However, it does not present any original research findings or data collection.",
+                "output": "No. Policy reports typically synthesize existing knowledge rather than introduce new research data."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The authors explored joint wear through mechanical stress tests on a newly formulated polymer for joint replacement. Quantitative analyses show improved durability compared to current materials, which represents a significant advancement in medical engineering.",
+                "output": "Yes. Mentioning mechanical stress tests and new material data demonstrates that this is original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Through a transactional analysis of gaming culture trends between 2010 and 2020, this study provides a nuanced understanding of social dynamics. It offers theoretical insights but no new data collection or experimental findings.",
+                "output": "No. Described as an analysis using existing data without new collection or experiments indicates it is not original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Investigating the effects of sleep deprivation on cognitive function, the study used EEGs to evaluate neural activity in participants deprived of sleep for 48 hours. New insights into brain wave patterns were revealed through rigorous testing protocols.",
+                "output": "Yes. The description involves original experimental setup and data analysis, fitting an original research article."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Discussing the philosophical underpinnings of economic theories, this paper articulates the evolution of key ideas through centuries without introducing new empirical data or experimental findings.",
+                "output": "No. The paper discusses theoretical evolution, suitable for a review or commentary, not original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The study evaluates a novel water filtration system in the laboratory setting, recording significant improvements in water quality indicators through several tests. The experimental results suggest viable applications in cleaner water distribution technologies.",
+                "output": "Yes. Laboratory testing and presentation of novel experimental findings indicate original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This research brief describes the workshop outcomes held by the Association for Biological Sciences, emphasizing future directions without conducting new data-driven research.",
+                "output": "No. The brief discusses organization workshop outcomes, implying no new research or data presented."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Through case-control studies, this investigation examines the genetic components associated with schizophrenia in a cohort of 500 individuals. New genetic correlations are identified, furthering understanding of this complex condition.",
+                "output": "Yes. Mentioning case-control studies and identifying new genetic correlations are characteristic of original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Analyzing artworks from the Renaissance, this paper discusses evolving styles and cultural influences. By referencing previous studies, it synthesizes art history developments rather than presenting new research data.",
+                "output": "No. The synthesis of existing studies on art history does not represent original research."
+            },
+            {
+                "input":"Instruction: Is the paper an original research article?\\n\\nText: This investigation evaluates the efficacy of a smartphone app in promoting physical activity among sedentary individuals. A randomized trial among 600 participants supports the app\'s role in increasing daily activity levels, with data reflecting significant behavioral changes.",
+                "output": "Yes. A randomized trial and data-driven findings demonstrate this as original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Drawing on theoretical frameworks, this article proposes a new model for evaluating language acquisition in bilingual children, but it relies heavily on secondary sources and brings no new empirical research data.",
+                "output": "No. The reliance on secondary sources and absence of new data indicates it is not an original research article."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Researchers synthesized and tested new chemical catalysts designed to improve efficiency in solar cells, detailing experimental methodologies and results indicative of enhanced energy conversion rates.",
+                "output": "Yes. The synthesis and testing of new catalysts with detailed results pertain to original scientific research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This brief discusses a panel discussion on the ethics of AI, featuring experts from diverse fields who debate future societal impacts. It highlights key points from the discussion but contains no new research data.",
+                "output": "No. It summarizes a panel discussion, which does not represent original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The efficacy of a novel antihypertensive drug was tested in a double-blind, placebo-controlled trial involving 1,000 patients. Significant decreases in blood pressure readings confirm its potential as an effective treatment option.",
+                "output": "Yes. The controlled trial and presentation of new data confirm it is an original research study."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Providing a narrative review of the role of epigenetics in cancer, this article consolidates existing findings from numerous studies to propose unified theories. It does not conduct new experiments or data analyses.",
+                "output": "No. A narrative review compiling existing studies does not contribute new original research findings."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: A new approach to artificial intelligence in autonomous vehicle navigation was developed, proven through extensive simulation testing and field trials, highlighting significant improvements in obstacle detection and response accuracy.",
+                "output": "Yes. The development and testing of a new AI approach with field trials signify an original research contribution."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This opinion piece reflects on the recent socio-political changes in Europe, offering forecasts and drawing from historical parallels without presenting any new research data or methodology.",
+                "output": "No. Opinion pieces do not involve original research methodology or data presentation."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: A field study evaluated the impact of renewable energy projects on community development in rural areas, collecting firsthand data through interviews and surveys with local residents, resulting in actionable insights for policymakers.",
+                "output": "Yes. Collection of firsthand data and presentation of actionable insights underscore this as original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Synthesizing literary critiques from the past five decades, this article provides an extensive overview of modern existential works. It is a critical survey but does not include new research data or original experiments.",
+                "output": "No. The activity of synthesizing past critiques indicates it is not an original research article."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Laboratory evaluations were conducted on a new biodegradable polymer for its efficiency in medical implants, with testing data demonstrating superior performance compared to conventional materials, suggesting a breakthrough in medical materials science.",
+                "output": "Yes. The detailed laboratory evaluations and new data presented imply this is an original research article."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The journal letter argues the inadequacies of current oceanographic research methods, suggesting improvements. While it contains insightful opinions, it is clearly marked as a commentary without experimental data.",
+                "output": "No. Commentaries provide discussion and critique and do not present original research data."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: An investigation of microbial resistance to conventional antibiotics tested new synthetic compounds in vitro, finding a statistically significant reduction in bacterial growth rates, suggesting a potential for medical application.",
+                "output": "Yes. The testing of new compounds and presentation of significant findings indicate original research work."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The trade book examines economic principles governing global markets, weaving in historical and modern examples. Although it educates on economic history concepts, it includes no new research data or methodologies.",
+                "output": "No. Trade books usually provide educational content without new research data, fitting the review or commentary category."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This study assessed the long-term cognitive benefits of exposure to bilingual education among 1,500 students using a longitudinal cohort design. Results narrate substantial positive impacts on cognitive development compared to monolingual peers.",
+                "output": "Yes. Usage of a longitudinal cohort design and assessments indicate it describes original research findings."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The authors conducted a biographical study of influential leaders, examining collected autobiographical and archival materials to produce a new narrative of leadership development. It does not involve new empirical data collection.",
+                "output": "No. Biographical studies relying on existing materials without new data collection do not constitute original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Quantitative methods measured the impact of remote work on productivity, utilizing employee survey data from multinational corporations collected over the past two years. Significant trends point to actionable management strategies.",
+                "output": "Yes. The collection and analysis of survey data depict this as an original research article."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Suggesting guidelines for the integration of AI in public health, this document derives its conclusions from a meta-analysis of pertinent studies, consolidating emerging perspectives rather than new empirical research.",
+                "output": "No. Deriving conclusions from meta-analysis and consolidation indicates it is not original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: By testing a new gene-editing technique in mice, researchers demonstrated the effective silencing of specific genes, reducing disease markers significantly. Experimental protocols and results underpin this breakthrough in genetic research.",
+                "output": "Yes. Describing new gene-editing techniques and experimental results exemplifies original research work."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: A book chapter focuses on the psychological underpinnings of human behavior in organizational settings, providing a synthesis of theories supported by a diverse range of existing research rather than presenting new data from experiments.",
+                "output": "No. Synthesis of theories and existing research in a book chapter does not constitute original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Conducting a survey of 500 teachers across different educational institutions, the study discovered diverse attitudes towards online learning platforms, presenting new insights crucial for future educational technology development.",
+                "output": "Yes. The execution of a new survey and presentation of insights denote it is an original research article."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Highlighting crucial policy lessons from diverse water management strategies, this technical report draws from various case studies but introduces no new experimental methods or data collection efforts.",
+                "output": "No. Technical reports drawing on case studies typically summarize existing information, not original research."
+            },
+            {
+                "input":"Instruction: Is the paper an original research article?\\n\\nText: Through field trials, a novel environmental sensor\'s accuracy and durability were evaluated under extreme conditions, marking a distinct advancement in environmental monitoring technologies. The results affirm its potential for practical applications.",
+                "output": "Yes. Field trials and presentation of new sensor data accentuate this as original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The researchers performed an extensive meta-analysis on the effectiveness of various machine learning algorithms in predicting financial outcomes. While it provides comprehensive evaluation, it synthesizes existing studies rather than conducting new research.",
+                "output": "No. Meta-analysis consolidates existing research rather than introducing new original data or experiments."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Experimental data from a novel imaging method reveal cellular dynamics in embryonic development at unprecedented resolution, offering significant insights into developmental biology. These findings were backed by rigorous experimental validation.",
+                "output": "Yes. The introduction of new imaging methods and resultant data indicate this is original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: A review of nutritional interventions in developing countries collates evidence from a range of studies to offer policy recommendations. Although comprehensive, it did not produce new empirical data or undergo original experimental research.",
+                "output": "No. The collection of existing nutritional studies for policy recommendations aligns with a review article, not original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Evaluating the effects of immersive virtual reality on pain management, the study involved a randomized controlled trial of 400 participants. Outcomes demonstrated significant reductions in pain perception, presenting novel intervention data.",
+                "output": "Yes. The use of a randomized controlled trial and presentation of results suggests this is an original research article."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Through philosophical discourse analysis, this paper contemplates the ethical implications of advancements in genetic technology, positing new ethical frameworks but not conducting empirical research or new experimental studies.",
+                "output": "No. Philosophical analysis without empirical data indicates it is not original research."
+            }
+        ]
+    }', '{
+        "samples": [
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The authors conducted a series of laboratory experiments to investigate the impact of different soil types on water absorption in new plant species. They measured the absorption rates under various controlled conditions and analyzed the data using regression models to determine the optimal soil composition for growth.",
+                "output": "Yes. The text describes original experiments and data analysis to investigate a specific research question, which indicates it is an original research article."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: In this review article, we summarize the latest developments in cancer immunotherapy, providing an overview of findings from multiple studies and discussing future directions for research. No new experimental data are presented, as the focus is on synthesizing existing knowledge.",
+                "output": "No. The text identifies the paper as a review article, which compiles and discusses existing research without presenting new experimental data."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This paper provides the results of a longitudinal study involving over 500 participants, examining the effects of digital media on cognitive development in young adults. The methodology is described in detail, and statistical analyses of the collected data are presented, highlighting significant trends.",
+                "output": "Yes. The paper describes a longitudinal study with data collection and statistical analysis, indicating it is an original research article."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This editorial discusses recent policy changes in environmental regulations and critiques the potential impacts on biodiversity conservation. It does not involve any new research data but rather provides an argument based on existing literature and policies.",
+                "output": "No. The text indicates that the paper is an editorial, which discusses existing policies and literature rather than presenting new research data."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Our research designed a series of surveys distributed to rural farmers to assess the adoption of sustainable farming practices. The data were collected, analyzed, and presented alongside new models to predict future adoption trends in different regions.",
+                "output": "Yes. The text describes original survey design, data collection, and analysis, indicating this is an original research article."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: We offer perspectives on the relationship between economic policy and social equality, proposing new theoretical frameworks without conducting any empirical research. These ideas are intended to stimulate academic debate and further studies.",
+                "output": "No. The text describes a perspective article, introducing theoretical frameworks without empirical research, indicating it is not an original research article."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This meta-analysis combines data from 20 clinical trials to assess the overall efficacy of a particular antidepressant. Findings are drawn from existing studies, synthesizing results rather than presenting new experimental data.",
+                "output": "No. The text indicates it is a meta-analysis, which involves synthesizing existing studies rather than presenting new original research data."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The study utilized advanced imaging techniques to explore the neural mechanisms involved in decision-making processes. Participants were monitored under different scenarios, and the data were used to develop new theoretical models.",
+                "output": "Yes. The text includes original experiments and data analysis, indicating the paper reports new findings, making it an original research article."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This commentary addresses the challenges faced by clinicians in implementing electronic health records effectively. It reviews existing case studies and offers recommendations based on observed trends, but does not present new experimental findings.",
+                "output": "No. The text describes a commentary, which discusses challenges based on existing studies without presenting new findings, indicating it is not an original research article."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: We present an empirical study investigating the relationship between diet and mental health in adolescents. Our team collected data through dietary assessments and psychological evaluations over a two-year period, using statistical methods to analyze correlations.",
+                "output": "Yes. The text describes data collection and analysis specific to investigating diet and mental health, indicating it is an original research article."
+            }
+        ]
+    }', '{
+        "samples": [
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The research discusses a newly conducted longitudinal study that monitored dietary habits over a five-year period with a sample size of 1,000 participants. Advanced nutritional biomarkers were assessed annually, and the findings highlight significant correlations between diet and cardiovascular health.",
+                "output": "Yes. The paper describes a longitudinal study with data collection and analysis over a specified period, clearly indicating original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This review explores the evolution of machine learning techniques in genomics over the past decade. It provides a comprehensive summary of key methodologies and findings reported in existing studies, without introducing new data or experimental results.",
+                "output": "No. The text specifies that it is a review summarizing existing research rather than presenting new experimental data."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The authors conducted field experiments to assess the impact of pesticide exposure on bee populations across multiple ecosystems. The results include new observations and statistical analyses directly addressing ecological hypotheses regarding bees.",
+                "output": "Yes. Field experiments, new observations, and statistical analyses are mentioned, which are indicators of original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This commentary discusses the implications of recent findings in climate change studies and offers expert opinions on future research directions. It includes no primary data or new research methods.",
+                "output": "No. The text describes a commentary that discusses implications rather than presenting original research findings."
+            },
+            {
+                "input":"Instruction: Is the paper an original research article?\\n\\nText: This paper details a newly developed algorithm for real-time data processing in autonomous vehicles. Extensive testing and performance evaluations are included, demonstrating the method\'s novelty and application.",
+                "output": "Yes. The development of a new algorithm with performance tests indicates that it is an original research article."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Through a series of double-blind, placebo-controlled trials, this study examines the efficacy of a new pharmaceutical compound. The experimental design and data analysis led to significant findings about treatment safety and effectiveness.",
+                "output": "Yes. The text describes experimental trials, data collection, and analytical results, indicating original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This perspective piece provides an overview of current challenges in renewable energy technologies and outlines potential pathways for innovation, without presenting new experimental data or methods.",
+                "output": "No. The text refers to a perspective article summarizing challenges, indicating it is not an original research article."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This technical report summarizes the outcomes of recent engineering projects aimed at improving urban infrastructure resilience. It reviews several case studies but does not introduce new experimental data.",
+                "output": "No. The text describes a report reviewing projects, indicating it is not presenting original research findings."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Researchers implemented a novel synthetic process to enhance material properties for industrial applications. The study included a detailed breakdown of experimental methods and comparative analysis with traditional processes.",
+                "output": "Yes. The introduction of a new synthetic process and detailed experimental analysis indicates original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This article provides a historical review of developments in the field of artificial intelligence, compiling significant milestones and influential studies from the past 50 years. It does not present new experimental data.",
+                "output": "No. The text describes a historical review, indicating it is not an original research article."
+            }
+        ]
+    }', '{
+        "samples": [
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This research conducted experiments involving three distinct populations of fruit flies, measuring their response to a new environmental toxin. Through a detailed analysis of genetic expression and phenotypic changes, the authors proposed a new model of environmental adaptation.",
+                "output": "Yes. The paper conducts experiments and analyzes new data on fruit fly populations, indicating it is original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This perspective article provides an overview of the current landscape of renewable energy technologies, highlighting trends and potential future developments. The authors also discuss policy implications to bolster innovation and adoption.",
+                "output": "No. The text mentions that it is a perspective article, which typically offers opinion and analysis rather than original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: In this paper, a novel computational algorithm is introduced to predict protein folding patterns. The authors provide a detailed comparison to existing algorithms, along with statistical validation using a benchmark dataset.",
+                "output": "Yes. The introduction of a novel algorithm and validation using new analysis indicates original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The authors performed a meta-analysis of existing clinical trials on the effectiveness of mindfulness-based stress reduction in treating anxiety disorders, analyzing pooled data to draw general conclusions.",
+                "output": "No. This is described as a meta-analysis, which aggregates existing data rather than contributing new data, indicating it is not original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Using satellite imagery and machine learning models, this study analyzes deforestation patterns over a decade in the Amazon rainforest, providing insights into ecological degradation and conservation opportunities.",
+                "output": "Yes. The use of satellite imagery to analyze new patterns over time suggests this is original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The article reviews the recent literature on neural network architectures, synthesizing approaches from over 100 published studies and identifying gaps in the current research landscape.",
+                "output": "No. The text describes the article as a review of existing literature, indicating it is not original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This work reports on a longitudinal cohort study examining the effect of dietary interventions on adolescent sleep patterns, using new survey data collected over two years.",
+                "output": "Yes. The mention of a cohort study and new data collection indicates that this is original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The authors critique recent methodologies used in environmental psychology, proposing alternative frameworks but not presenting new experimental evidence.",
+                "output": "No. As the paper features a critique without new data, it is not original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: An ethnographic study was conducted to explore the impact of digital technologies in rural education systems, involving on-site visits and interviews with teachers across five districts, resulting in new qualitative insights.",
+                "output": "Yes. The ethnographic study, involving site visits and interviews, suggests the work is original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: In this editorial piece, the author discusses the implications of machine learning advancements in the field of medicine, calling for ethical considerations and regulatory frameworks.",
+                "output": "No. Editorial pieces are opinion-based and do not provide new research data, indicating it is not original research."
+            }
+        ]
+    }', '{
+        "samples": [
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The research includes data collected from 300 adolescents to understand the impact of social media on their mental health. Various psychological scales were used to measure anxiety and depression levels before and after a six-month period.",
+                "output": "Yes. The paper involves original data collection and analysis of adolescent social media usage impacts, showing it is an original research article."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This publication serves as an editorial discussing the implications of recent policy changes in educational frameworks. It offers opinions on potential future directions but does not include new experimental data or findings.",
+                "output": "No. The text describes an editorial, which provides insights and opinions rather than original research with new data."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Reporting on a double-blind study involving 150 volunteers, this paper introduces a novel drug to treat a common cold. The methodology section details the trial phases, including dosage variations and statistical analyses of participant recovery rates.",
+                "output": "Yes. Mention of a double-blind study and detailed methodology indicates new experimental data, confirming it as original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This paper outlines a meta-analysis of dietary studies from the past decade, synthesizing results to provide insights into the effects of high-protein diets on cardiac health. The paper reviews existing data rather than contributing new findings.",
+                "output":"No. Since the focus is on a meta-analysis compiling existing studies, it lacks original data collection, thus it\'s not an original research article."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: A theoretical model is proposed to explain the dynamics of star formation in galactic cores. The authors discuss mathematical simulations and hypotheses without experimental data or new observational findings.",
+                "output": "No. The paper develops a theoretical model without reporting experimental or newly observed data, characterizing it as non-original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: In this review, the authors compile various case studies about urban planning impacts on local biodiversity. No new experiments or data analyses are included, focusing instead on insights gained from pre-existing studies.",
+                "output": "No. This is explicitly a review article, summarizing existing case studies rather than presenting original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The study measures the efficacy of a new software tool for teaching mathematics, collecting responses from 400 high school teachers across multiple districts. Results include statistical analyses and user feedback.",
+                "output": "Yes. The collection and analysis of new data from high school teachers about software efficacy confirm this as original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: An opinion piece reflecting on advancements in cancer treatment technologies, this article encourages further exploration and presents a narrative on emerging ethics but lacks new experimental data.",
+                "output": "No. Labeled as an opinion piece, this text reflects on advancements without presenting new research findings, making it non-original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This exploratory research gathered survey responses from 500 participants to assess the relationship between diet and student concentration levels. Statistical tests were applied to determine significance, outlining new findings.",
+                "output": "Yes. The article involves original survey data gathering and statistical analysis, fitting the criteria for original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: A commentary on the economic impact of global events, this paper synthesizes expert opinions and previous reports to discuss potential scenarios and future directions without presenting new data.",
+                "output": "No. As a commentary, it relies on existing reports and expert opinions, lacking original research findings."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Researchers conducted a cross-sectional study involving over 200 urban centers to investigate air quality impacts on public health, collecting samples and statistical data for analysis.",
+                "output": "Yes. The description of a cross-sectional study with new data sample collection validates this as original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The article provides a summary of workshops on climate change held over the last year, presenting compiled insights and recommendations from various experts. No new experimental data is included.",
+                "output": "No. This is a summary of workshops, which implies it consolidates existing knowledge without introducing new research data."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Conducting an experimental study, this paper assesses the impact of different lighting conditions on plant growth, with detailed data collected from multiple controlled environments and statistical analysis.",
+                "output": "Yes. The detailed experimental study and data collection on plant growth are indicators of original research activity."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: A narrative review highlights the historical developments in artificial intelligence technologies, focusing on pivotal moments and key figures. It organizes knowledge around known milestones, not new discoveries.",
+                "output": "No. Since it is a narrative review, it summarizes past developments without reporting new research data."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The authors perform a longitudinal study by tracking 100 individuals over five years to assess the progression of early-stage diabetes treatments, providing novel insights based on fresh data gathered.",
+                "output": "Yes. The text confirms original research through a longitudinal study collecting new data, making it an original research article."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This conference report outlines the discussions and presentations made during a recent international scientific congregation, capturing the event but not engaging in new experimental research.",
+                "output": "No. The report summarizes discussions without presenting new research findings, classifying it as non-original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Utilizing a new composite material, researchers conducted tensile strength tests, detailing experimental conditions and results that indicate improved performance over traditional materials.",
+                "output": "Yes. Experimental testing of a new material with specific results signifies original research contributions."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: By reviewing 60 published articles on renewable energy adoption patterns, this paper seeks to consolidate understanding and identify trends. It provides a synthesis rather than new primary data.",
+                "output": "No. The focus on reviewing and synthesizing existing literature categorizes this as non-original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Analyzing data from a national health database, the study identifies correlations between socioeconomic factors and public health outcomes. This data-driven approach offers new insights and hypotheses.",
+                "output": "Yes. The analysis of specific national health database data addressing new hypotheses qualifies this as original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This perspective piece explores the role of educators in technology integration into classrooms, presenting arguments supported by existing research but not contributing new experimental data.",
+                "output": "No. Described as a perspective piece, it provides arguments and insights without conducting new research, ruling out original research."
+            }
+        ]
+    }', '{
+        "samples": [
+            {
+                "input":"Instruction: Is the paper an original research article?\\n\\nText: In this investigation, our team performed a longitudinal study on the impact of air quality on schoolchildren\'s lung health. Over a period of two years, we monitored 300 children at 10 different schools, using spirometry tests and air pollution sensors. Statistical analyses were conducted to determine correlations between air pollution levels and lung function changes.",
+                "output": "Yes. The description of a longitudinal study with new data collection, spirometry tests, and statistical analyses indicates original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This perspective discusses the implications of recent climate policy advancements. The authors provide expert opinions and suggest potential directions for future research, but they do not present new empirical data or statistical analyses within this piece.",
+                "output": "No. The text is identified as a perspective article, which typically provides analysis and opinion rather than new research findings or data."
+            },
+            {
+                "input":"Instruction: Is the paper an original research article?\\n\\nText: The study outlines the synthesis and characterization of a new polymer with enhanced thermal properties. Using differential scanning calorimetry and thermogravimetric analysis, the research introduces novel findings concerning the material\'s stability and efficiency, suggesting potential applications in industrial settings.",
+                "output": "Yes. The specification of polymer synthesis, characterization techniques, and novel findings demonstrates that this is original research with newly presented data."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This comprehensive review examines the last decade of advancements in gene therapy for hemophilia. By analyzing data from multiple clinical trials, the review highlights critical developments and future challenges but does not include any new data collection or experimental work by the authors themselves.",
+                "output": "No. As a comprehensive review, the paper collates existing clinical trial data without conducting original experiments or introducing new findings."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Through ethnographic methods, this paper explores the cultural impact of digital technology on indigenous communities. Detailed interviews and participatory observations were conducted with community members over six months to uncover shifts in cultural practices influenced by technology.",
+                "output": "Yes. The use of ethnographic methods, direct interviews, and participatory observations indicates that the study involves original research with new data acquisition."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: In our editorial, we critique recent literature on the impact of artificial intelligence in medicine. We provide a synthesis of ideas and comment on the potential future of AI in healthcare, focusing on its ethical implications. No new data or experimental methods are introduced.",
+                "output": "No. The article is identified as an editorial, which typically provides commentary and synthesis without presenting new research data or experimental results."
+            },
+            {
+                "input":"Instruction: Is the paper an original research article?\\n\\nText: This study investigates the sleep patterns of university students through actigraphy and sleep diaries over a semester. The collected data were analyzed to examine correlations between sleep quality and academic performance, providing new insights into students\' health and achievement.",
+                "output": "Yes. The description focuses on the use of actigraphy, data collection, and analysis, all indicative of conducting original research with new findings."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This paper reviews the historical development of quantum computing technologies, summarizing the key breakthroughs and theoretical advancements. The information is drawn from various published papers, but no new experimental work is disclosed.",
+                "output": "No. The article is mentioned as a review, compiling and summarizing existing works without original experiments or new data."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Our research analyzes the patient outcomes of a newly developed surgical technique for hip replacement. Reporting on 100 cases, we utilized pre- and post-operative imaging and functional assessments to test the efficacy of the procedure, yielding novel insights into recovery trajectories.",
+                "output": "Yes. The text details original research through new methodological applications, patient data collection, and subsequent analysis, which are characteristic of a research article."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: In a meta-analysis of existing studies on cognitive behavioral therapy for anxiety disorders, we synthesized outcomes from diverse clinical trials to assess the overall effectiveness of this treatment modality. We did not conduct new experiments or collect new data for this analysis.",
+                "output": "No. The paper is identified as a meta-analysis, integrating data from existing studies rather than presenting original experiments or new data."
+            }
+        ]
+    }', '{\n  "samples": [\n    {\n      "input": "Instruction: Is the paper an original research article?\\n\\nText: In this study, researchers conducted interviews with 150 school teachers to examine their experiences with remote teaching during the pandemic. The data were analyzed using thematic content analysis to identify emerging themes and patterns, providing insights into educational challenges and adaptability.",\n      "output": "Yes. This text indicates that new data were collected through interviews and analyzed, which is characteristic of original research."\n
+            },\n    {\n      "input": "Instruction: Is the paper an original research article?\\n\\nText: The article examines existing literature regarding climate change impacts on agriculture. It compiles findings from various studies to provide an overview of trends and evaluates potential policy responses. No original data are introduced.",\n      "output": "No. This is a review article summarizing findings from other studies, not reporting new experimental data."\n
+            },\n    {\n      "input": "Instruction: Is the paper an original research article?\\n\\nText: A novel bioinformatics approach was developed to analyze protein-ligand interactions. The study involved computational simulations validated by experimental assays, revealing new insights into biochemical processes critical for drug development.",\n      "output": "Yes. The development of a new approach and experimental validation indicate original research contributions."\n
+            },\n    {\n      "input": "Instruction: Is the paper an original research article?\\n\\nText: The authors provide a commentary on the current state of mental health research, critiquing methodological approaches and suggesting future directions. It is not supplemented with new experimental data.",\n      "output": "No. This is a commentary piece, as it critiques existing research without presenting new findings."\n
+            },\n    {\n      "input": "Instruction: Is the paper an original research article?\\n\\nText: Researchers conducted a double-blind trial with 300 participants to assess the efficacy of a new dietary supplement on weight loss. The methodology, including control measures and data analysis techniques, is thoroughly detailed.",\n      "output": "Yes. The mention of a double-blind trial and detailed methodology suggests original research involving new data collection."\n
+            },\n    {\n      "input": "Instruction: Is the paper an original research article?\\n\\nText: This systematic review analyzes 40 studies about the effects of urbanization on bird migration patterns, synthesizing existing research to highlight gaps and propose new research avenues.",\n      "output": "No. The article is a systematic review, which compiles existing studies and does not present original data."\n
+            },\n    {\n      "input": "Instruction: Is the paper an original research article?\\n\\nText: The study presents a longitudinal analysis of economic data collected over ten years from multiple regions. The original dataset enables the exploration of trends in economic growth related to technological innovation.",\n      "output": "Yes. This involves the collection and analysis of new data over a significant period, indicative of original research."\n
+            },\n    {\n      "input": "Instruction: Is the paper an original research article?\\n\\nText: An editorial piece discusses the ethical implications of recent advancements in genetic engineering, referencing prominent studies and posing critical questions for future research.",\n      "output": "No. Being an editorial, it discusses and reflects on existing studies without presenting new experimental data."\n
+            },\n    {\n      "input": "Instruction: Is the paper an original research article?\\n\\nText: This research paper reports on the synthesis of a new chemical compound, characterized by various spectroscopic methods, and its potential application in solar cells. Experimental results reveal improved efficiency over existing compounds.",\n      "output": "Yes. The synthesis and experimental analysis of a new compound clearly describe original research."\n
+            },\n    {\n      "input": "Instruction: Is the paper an original research article?\\n\\nText: The authors review emerging trends in artificial intelligence for healthcare, summarizing technological advancements and their implications for clinical practice. Clarifications are drawn from a wide range of studies.",\n      "output": "No. This is a review article summarizing trends without introducing new research findings."\n
+            }\n
+        ]\n
+    }', '{
+        "samples": [
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The current research investigates the impact of social media usage on academic performance among undergraduates. Data was collected through surveys conducted across five universities, and statistical analyses were employed to assess correlations, with results indicating a significant relationship between social media usage and lower academic performance.",
+                "output": "Yes. The text mentions data collection through surveys, the application of statistical analyses, and presents new findings, all indicative of original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: In this article, the authors explore the concept of cognitive dissonance and discuss various psychological perspectives by reviewing literature from the past decade. No new data was collected, but the article provides a comprehensive synthesis of existing studies.",
+                "output": "No. The paper is a review, summarizing existing literature without presenting new experimental findings."
+            },
+            {
+                "input":"Instruction: Is the paper an original research article?\\n\\nText: The investigation focuses on the development of a new algorithm for speech recognition. Using a dataset of over 10,000 audio samples, the paper details the implementation process, experimental results, and compares the algorithm\'s performance with existing models.",
+                "output": "Yes. The text describes the collection of a specific dataset, experimental results, and comparisons with existing models, indicative of original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Through a series of essays, this paper explores the philosophical implications of artificial intelligence. The authors offer their viewpoints without conducting empirical research or experiments, aiming to provide a theoretical framework for future studies.",
+                "output": "No. The text indicates theoretical exploration through essays without empirical data or original experiments, classifying it as non-original research."
+            },
+            {
+                "input":"Instruction: Is the paper an original research article?\\n\\nText: By conducting a double-blind placebo-controlled study with 300 participants, the research analyzes the effects of a new dietary supplement on metabolic rates. Detailed methodology and statistical analysis are presented, establishing the supplement\'s efficacy.",
+                "output": "Yes. The study involves new data collection, a specific experimental design, and detailed methodology, identifying it as an original research article."
+            },
+            {
+                "input":"Instruction: Is the paper an original research article?\\n\\nText: The authors analyze the trends in renewable energy adoption worldwide by compiling and interpreting data from over 100 studies. Their meta-analysis provides insights into policy impacts but doesn\'t introduce new data or experiments.",
+                "output": "No. The text clearly identifies the work as a meta-analysis, signifying it summarizes existing data rather than reporting new findings."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This observational study investigates the correlation between air pollution levels and respiratory health outcomes in urban areas. Results from air quality monitors and health data of over 5,000 residents are analyzed to draw conclusions.",
+                "output": "Yes. The text indicates new data collection and analysis, with observational study methods, categorizing it as original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: A perspective on the future of quantum computing, this article discusses potential technological implications and industry trends. The authors present their predictions without conducting new experimental research or data analysis.",
+                "output": "No. The text is described as a perspective article with predictive discussion but lacking empirical data collection or original research."
+            },
+            {
+                "input":"Instruction: Is the paper an original research article?\\n\\nText: This case study examines a single company\'s transition to a remote work model during the pandemic. Data was gathered through interviews and performance metrics over a year, providing insights into organizational adaptability.",
+                "output": "Yes. The text describes a case study involving data collection through interviews and metrics analysis, indicative of original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This article serves as an editorial on current challenges in public health policy. It highlights key issues but does not undertake new research or provide data-driven results, focusing instead on expert opinions and recommendations.",
+                "output": "No. The text is an editorial, focusing on issues and opinions without involving new data collection or experimental research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The study evaluates the effects of a novel antidiabetic drug using a randomized controlled trial. Data from 150 participants were analyzed using advanced statistical methods, revealing significant impacts on blood glucose levels.",
+                "output":"Yes. The research describes a randomized controlled trial and detailed data analysis, indicating it\'s an original study."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The authors compile recent advancements in machine learning techniques for natural language processing, reviewing over 40 academic papers. They analyze trends but do not present their own experimental findings.",
+                "output": "No. The paper is a review article, summarizing existing advancements without conducting new experiments or data collection."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Conducting field experiments with over 100 different plant species, the researchers developed insights into climate change effects on plant growth. The study outlines methodology and results indicating a significant increase in growth rates with temperature rise.",
+                "output": "Yes. The article describes field experiments with new data collection and analysis, characteristic of original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The authors present opinions on cybersecurity challenges in a connected world, focusing on hypothetical scenarios and potential solutions. The discussion lacks empirical data or newly conducted research.",
+                "output": "No. It is an opinion piece relying on discussions and scenarios without offering new empirical data or experiments."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This feasibility study investigates the implementation of solar panels in remote villages. Data on sunlight availability, local energy needs, and costs were collected and analyzed to propose sustainable energy solutions.",
+                "output": "Yes. The text indicates new data collection and analysis in a feasibility study, qualifying it as original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This conference paper abstracts key findings from a wide range of studies on urban planning. It focuses on synthesizing diverse viewpoints but does not collect or analyze new data directly.",
+                "output": "No. The text is a synthesis across multiple studies without new data collection or analysis, typical of a non-original research format."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Researchers analyzed the genomes of ancient fossils to understand human evolution patterns. The study presents new sequencing data and comparative analysis of genetic variations.",
+                "output": "Yes. The article involves new data from genomic sequencing and genetic analyses, marking it as original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Providing a comprehensive overview of current AI ethics, this article examines various ethical challenges in recent literature. It serves as a foundational guide without introducing new empirical data.",
+                "output": "No. The text reviews existing literature on AI ethics, lacking new data or experimental contributions, thus it is not original research."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: Through controlled experiments, this research measures the effects of noise pollution on cognitive performance in children. The data revealed statistically significant impacts on attention and memory.",
+                "output": "Yes. The controlled experiments and data-driven results signify that this is an original research study."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: A commentary on the economic impacts of global pandemics, presenting views from multiple experts. While it draws on various published studies, it does not feature newly gathered data or original analysis.",
+                "output": "No. The text is a commentary, synthesizing expert opinions and existing work without presenting new research or data analysis."
+            }
+        ]
+    }', '{
+        "samples": [
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The article examines the environmental impacts of urban green spaces through an in-depth literature review. By analyzing existing research across various contexts and regions, the study identifies patterns and gaps in current knowledge but does not present any new data or experiments.",
+                "output":"No. The use of the term \'literature review\' indicates the paper is a summary of existing research, not a presentation of new findings."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This investigation explores the relationship between sleep patterns and cognitive performance among adolescents. The study recruited 150 students, using a combination of surveys and sleep monitoring devices to gather novel data. Comprehensive statistical analyses were conducted to test the hypothesis of an association between sleep quality and academic performance.",
+                "output": "Yes. The description includes original data collection and analysis, confirming it is an original research article."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The paper discusses recent advancements in renewable energy technologies, offering insights into current trends. While it synthesizes information from a range of studies, it explicitly identifies itself as a perspective piece, focusing on expert opinions and future directions rather than new experimental data.",
+                "output":"No. The text identifies the article as a \'perspective piece,\' indicating no new research data is presented."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This research focuses on the effects of a new nutritional supplement on elderly health. Conducting trials with 200 participants over a year-long period, the study employs double-blind methods and detailed biochemical analyses to evaluate health outcomes. Results suggest significant improvements in immune function among those receiving supplementation.",
+                "output": "Yes. The described study includes original experimentation and data analysis, characteristic of an original research article."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: The article offers a critical editorial on recent policies impacting higher education. By discussing data from several educational reports, it provides an analysis of policy effectiveness but does not include any new data or empirical research.",
+                "output":"No. The text is an \'editorial,\' which typically involves commentary or opinion rather than original research findings."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This paper presents findings from a longitudinal study assessing the impact of air pollution on respiratory health. Researchers followed 500 participants over five years, conducting regular health screenings and measuring pollutant levels, which informs their analysis on respiratory disease progression.",
+                "output": "Yes. The text clearly indicates the collection of new data over an extended period, aligning with characteristics of an original research article."
+            },
+            {
+                "input":"Instruction: Is the paper an original research article?\\n\\nText: The study aims to create a novel algorithm for predicting cryptocurrency market trends using real-time market data. Employing machine learning techniques, the research team collected new datasets and performed extensive simulations to validate their algorithm\'s accuracy and applicability. The approach led to an enhanced prediction model.",
+                "output": "Yes. The presence of novel algorithm development, real-time data collection, and original analysis supports this being an original research article."
+            },
+            {
+                "input":"Instruction: Is the paper an original research article?\\n\\nText: Through a thorough examination of 85 different studies, this article provides a review of cognitive behavioral therapy\'s effectiveness in treating depression. While the studies reviewed yield important insights, this article itself does not include any new experimental results.",
+                "output":"No. The description of a \'review\' of existing studies indicates it is not an original research article."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This paper discusses a new model developed to simulate ecosystem dynamics in tropical rainforests. Researchers utilized data from numerous field studies and conducted simulations to predict future biodiversity outcomes under various climate change scenarios. The paper details new methodologies and results obtained from these simulations.",
+                "output": "Yes. The development and use of a new model and original simulations indicate this is an original research article."
+            },
+            {
+                "input": "Instruction: Is the paper an original research article?\\n\\nText: This commentary addresses the implications of recent legislative changes for public health funding. Drawing insights from several policy papers, it critiques current funding strategies but deliberately avoids presenting primary research data or conclusions from new studies.",
+                "output": "No. The article is clearly a commentary, emphasizing critique and discussion without the introduction of new experimental data."
+            }
+        ]
+    }'
+]
