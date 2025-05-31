@@ -14,10 +14,10 @@ There are six factors that you are to use as guidelines for classification. Assi
 }
 
 #1 Is the paper an original research article?
-    * Occurrence of terms like "study", "review", "perspectives", "posters" or "preprints" in an article are common indicators that the paper considered is not an original research and therefore must have the negative class of "irrelevant paper".
+    * Occurrence of terms like "study - can be deceiving. Study does not always mean not an original research paper", "review", "perspectives", "posters" or "preprints" in an article are common indicators that the paper considered is not an original research and therefore must have the negative class of "irrelevant paper".
     * Original research articles often contain some kind of data collection followed by statistical analysis to support or refute a hypothesis. Often these kinds of information are located in the methods section of an article, so be aware of that. Obviously, the presence of these contexts should indicate that the paper is an original research and should influence you to classify it as the positive "relevant paper" class.
 
-#2 Does the paper have Alzheimer's Disease (AD) as its main focus?
+#2 Does the paper have a Alzheimer's Disease (AD) population as its main focus?
     * Papers explicitly studying AD topics like diagnosis, treatment, biomarkers, or pathology should be assigned the positive class of "relevant paper".
     * Papers involving AD patients (i.e., at risk, Mild Cognitive Impairment, AD) should be assigned the positive class of "relevant paper".
     * Biomarker specificity: Include studies addressing AD biomarkers such as Amyloid beta and tau proteins and assign the studies the positive class of "relevant paper". HOWEVER, if the biomarkers contain general neurodegeneration markers assign them the negative class of "irrelevant paper."
@@ -29,11 +29,23 @@ There are six factors that you are to use as guidelines for classification. Assi
 #4 Does the paper look at proteins as biomarkers (not genes, nor transcripts nor fragments)?
     * Keyword Filtering: Use terms like "protein," "amyloid," "tau," or specific AD-related proteins (e.g., "beta-amyloid") to identify relevant studies. Papers mentioning these terms several times and base most of the context on these proteins should be assigned the positive class of "relevant paper."
     * Exclude papers mentioning "gene," "RNA," "transcription," or "fragment" several times and have them as the central context as indicators of a non-protein focus.
-    
-#5 Does the paper include Fluids from Non-Clinical Models to perform its study?
+
+--- Old Criteria 5 ----
+#5 Does the paper include Fluids from Non-Clinical (The term non-clinical is ambiguous and can be interpreted differently) Models to perform its study?
     * Fluid Criteria: Focus on animal studies using fluids like cerebrospinal fluid (CSF), blood, serum, or plasma. These fluids often contain biomarkers relevant to AD research, and papers satisfying these criteria should be assigned the positive class of "relevant paper."
     * Exclusion of Tissue Samples: Exclude studies involving tissue samples (e.g., brain slices, biopsy samples) using keywords like "tissue," "histology," or "brain slice." Studies involving these samples should be assigned the negative class of "irrelevant paper."
-    
+
+--- New Criteria 5 ----
+
+#5 Does the paper include Fluids from animal models to perform its study?
+
+    * Don't include any papers that're using animal models.
+
+    * Flag papers using cell-cultures from patients, not animals.
+
+    * Fluid Criteria: Focus on animal studies using fluids like cerebrospinal fluid (CSF), blood, serum, or plasma. These fluids often contain biomarkers relevant to AD research, and papers satisfying these criteria should be assigned the positive class of "relevant paper." ( Relax a bit more - have less training samples on this )  - NOT Relevant, remove
+
+
 #6. If the term Blood occurs in the paper does it use Blood as an AD biomarker?
     * Keyword Exclusion: Identify "blood" as a relevant biomarker but exclude papers mentioning "blood pressure" (e.g., "blood pressure measurement" or "high blood pressure").
     * Contextual Filtering: Differentiate between "blood" used in biomarker sampling (e.g., "serum analysis") and circulatory assessments like "blood pressure."
