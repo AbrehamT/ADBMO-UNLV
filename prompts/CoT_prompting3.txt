@@ -29,6 +29,9 @@ There are six factors that you are to use as guidelines for classification. Assi
 #4 Does the paper look at proteins as biomarkers (not genes, nor transcripts nor fragments)?
     * Keyword Filtering: Use terms like "protein," "amyloid," "tau," or specific AD-related proteins (e.g., "beta-amyloid") to identify relevant studies. Papers mentioning these terms several times and base most of the context on these proteins should be assigned the positive class of "relevant paper."
     * Exclude papers mentioning "gene," "RNA," "transcription," or "fragment" several times and have them as the central context as indicators of a non-protein focus.
+    Notes:
+      * Get a class of proteins to serve as inclusion criterias.
+      * Anything gene related, exclude.
 
 --- Old Criteria 5 ----
 #5 Does the paper include Fluids from Non-Clinical (The term non-clinical is ambiguous and can be interpreted differently) Models to perform its study?
@@ -47,9 +50,12 @@ There are six factors that you are to use as guidelines for classification. Assi
 
 
 #6. If the term Blood occurs in the paper does it use Blood as an AD biomarker?
+    * Note: 
+          * Need to include markers for vascular health. 
+          * We don't want to include BP so use distance between "blood" and "pressure" help determine exclusion related to blood pressure)
     * Keyword Exclusion: Identify "blood" as a relevant biomarker but exclude papers mentioning "blood pressure" (e.g., "blood pressure measurement" or "high blood pressure").
     * Contextual Filtering: Differentiate between "blood" used in biomarker sampling (e.g., "serum analysis") and circulatory assessments like "blood pressure."
-    * Pattern Recognition: Classify studies containing terms such as "hypertension study" or "vascular health," with the negative class of "irrelevant paper."
+    * Pattern Recognition: Classify studies containing terms such as "hypertension study" or "vascular health," with the positive class of "relevant paper" as long as it's dealing with AD.
 
 Reasonably step through the mentioned criteria generating a response as to whether that criterion is satisfied as you move forward and return the final results in JSON format.
 
